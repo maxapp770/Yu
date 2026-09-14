@@ -12,49 +12,136 @@ jobs:
   build:
     name: Build ${{ matrix.variant }} APK
     runs-on: ubuntu-latest
+
     strategy:
       fail-fast: false
       matrix:
-        variant: [customer, admin]
+        variant:
+          - customer
+          - admin
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v5
 
       - name: Extract source parts
+        shell: bash
         run: |
-          set -e
-          mkdir -p assembled
-          for file in 01-android-project.zip 02-service.zip 03-web-assets.zip 04-docs-and-tests.zip; do
-            test -f "$file"
-            unzip -q -o "$file" -d assembled
+          set -Eeuo pipefail
+
+          rm -rf assembled build
+          mkdir -p assembled build
+
+          for archive in \
+            01-android-project.zip \
+            02-service.zip \
+            03-web-assets.zip \
+            04-docs-and-tests.zip
+          do
+            test -f "$archive" || {
+              echo "::error::Missing archive: $archive"
+              exit 1
+            }
+
+            unzip -q -o "$archive" -d assembled
           done
 
-      - uses: actions/setup-java@v4
+          echo "Source parts extracted successfully."
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: "17"
           cache: gradle
 
-      - uses: android-actions/setup-android@v3
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
 
-      - name: Install Android SDK
-        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - name: Install Android SDK packages
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+
+          sdkmanager \
+            "platforms;android-35" \
+            "build-tools;35.0.0"
 
       - name: Build APK
+        shell: bash
         env:
           HEC_APP_ROLE: ${{ matrix.variant }}
           HEC_SERVICE_ORIGIN: https://hec-service-review.fadhel-motaher.chatgpt.site
         run: |
-          set -e
-          mkdir -p build
+          set -Eeuo pipefail
 
-          script=$(find assembled -type f -name build-apk.sh -print -quit)
+          build_script="$(find assembled \
+            -type f \
+            -name "build-apk.sh" \
+            -print \
+            -quit || true)"
 
-          if [ -n "$script" ]; then
-            dir=$(dirname "$script")
-            chmod +x "$script"
-            cd "$dir"
-            bash ./build-apk.sh
-            cd -
+          if [[ -n "$build_script" ]]; then
+            echo "Using build script: $build_script"
+
+            project_dir="$(dirname "$build_script")"
+            script_name="$(basename "$build_script")"
+
+            chmod +x "$build_script"
+
+            (
+              cd "$project_dir"
+              bash "./$script_name"
+            )
           else
-            gradle=$(find assembled -
+            gradlew="$(find assembled \
+              -type f \
+              -name "gradlew" \
+              -print \
+              -quit || true)"
+
+            if [[ -n "$gradlew" ]]; then
+              echo "Using Gradle wrapper: $gradlew"
+
+              project_dir="$(dirname "$gradlew")"
+
+              chmod +x "$gradlew"
+
+              (
+                cd "$project_dir"
+                ./gradlew assembleDebug \
+                  --no-daemon \
+                  --stacktrace
+              )
+            else
+              echo "::error::Neither build-apk.sh nor gradlew was found."
+              find assembled -maxdepth 6 -type f | sort
+              exit 1
+            fi
+          fi
+
+          apk_file="$(find assembled \
+            -type f \
+            -name "*.apk" \
+            -print \
+            -quit || true)"
+
+          if [[ -z "$apk_file" ]]; then
+            echo "::error::Build completed but no APK was found."
+            find assembled -maxdepth 8 -type f | sort
+            exit 1
+          fi
+
+          output_file="build/HEC-${HEC_APP_ROLE}-2.6.0.apk"
+
+          cp "$apk_file" "$output_file"
+
+          echo "APK created successfully:"
+          ls -lh "$output_file"
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: HEC-2.6.0-${{ matrix.variant }}
+          path: build/HEC-${{ matrix.variant }}-2.6.0.apk
+          if-no-files-found: error
