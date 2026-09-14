@@ -21,7 +21,7 @@ jobs:
           - admin
 
     steps:
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v5
 
       - name: Extract source parts
@@ -46,9 +46,7 @@ jobs:
             unzip -q -o "$archive" -d assembled
           done
 
-          echo "Source parts extracted successfully."
-
-      - name: Fix BarcodeDecoder Java error
+      - name: Fix BarcodeDecoder
         shell: bash
         run: |
           set -Eeuo pipefail
@@ -59,10 +57,10 @@ jobs:
             -print \
             -quit || true)"
 
-          if [[ -z "$decoder" ]]; then
+          test -n "$decoder" || {
             echo "::error::BarcodeDecoder.java was not found."
             exit 1
-          fi
+          }
 
           sed -i \
             's/catch (ReaderException | IllegalArgumentException ignored)/catch (IllegalArgumentException ignored)/' \
@@ -72,23 +70,17 @@ jobs:
             '/import com.google.zxing.ReaderException;/d' \
             "$decoder"
 
-          echo "BarcodeDecoder.java fixed successfully."
-
       - name: Set up Java
         uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "17"
-          cache: gradle
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install Android SDK packages
-        shell: bash
+      - name: Install Android SDK
         run: |
-          set -Eeuo pipefail
-
           sdkmanager \
             "platforms;android-35" \
             "build-tools;35.0.0"
@@ -108,8 +100,6 @@ jobs:
             -quit || true)"
 
           if [[ -n "$build_script" ]]; then
-            echo "Using build script: $build_script"
-
             project_dir="$(dirname "$build_script")"
             script_name="$(basename "$build_script")"
 
@@ -126,24 +116,21 @@ jobs:
               -print \
               -quit || true)"
 
-            if [[ -n "$gradlew" ]]; then
-              echo "Using Gradle wrapper: $gradlew"
-
-              project_dir="$(dirname "$gradlew")"
-
-              chmod +x "$gradlew"
-
-              (
-                cd "$project_dir"
-                ./gradlew assembleDebug \
-                  --no-daemon \
-                  --stacktrace
-              )
-            else
+            test -n "$gradlew" || {
               echo "::error::Neither build-apk.sh nor gradlew was found."
-              find assembled -maxdepth 8 -type f | sort
               exit 1
-            fi
+            }
+
+            project_dir="$(dirname "$gradlew")"
+
+            chmod +x "$gradlew"
+
+            (
+              cd "$project_dir"
+              ./gradlew assembleDebug \
+                --no-daemon \
+                --stacktrace
+            )
           fi
 
           apk_file="$(find assembled \
@@ -160,17 +147,17 @@ jobs:
               -quit || true)"
           fi
 
-          if [[ -z "$apk_file" ]]; then
-            echo "::error::Build completed but no APK was found."
+          test -n "$apk_file" || {
+            echo "::error::No APK was found after build."
             find assembled -maxdepth 8 -type f | sort
             exit 1
-          fi
+          }
 
           echo "APK found: $apk_file"
 
           unsigned_apk="$apk_file"
           aligned_apk="build/HEC-${HEC_APP_ROLE}-aligned.apk"
-          output_file="build/HEC-${HEC_APP_ROLE}-2.6.0.apk"
+          output_apk="build/HEC-${HEC_APP_ROLE}-2.6.0.apk"
           keystore="build/hec-release.keystore"
 
           keytool -genkeypair -v \
@@ -183,217 +170,31 @@ jobs:
             -validity 10000 \
             -dname "CN=HEC, OU=HEC, O=HEC, C=YE"
 
-          zipalign_bin="$ANDROID_HOME/build-tools/35.0.0/zipalign"
-          apksigner_bin="$ANDROID_HOME/build-tools/35.0.0/apksigner"
+          zipalign="$ANDROID_HOME/build-tools/35.0.0/zipalign"
+          apksigner="$ANDROID_HOME/build-tools/35.0.0/apksigner"
 
-          test -x "$zipalign_bin"
-          test -x "$apksigner_bin"
+          test -x "$zipalign"
+          test -x "$apksigner"
 
-          "$zipalign_bin" -f -p 4 \
+          "$zipalign" -f -p 4 \
             "$unsigned_apk" \
             "$aligned_apk"
 
-          "$apksigner_bin" sign \
+          "$apksigner" sign \
             --ks "$keystore" \
             --ks-pass pass:android \
             --key-pass pass:android \
             --v1-signing-enabled true \
             --v2-signing-enabled true \
             --v3-signing-enabled true \
-            --out "$output_file" \
+            --out "$output_apk" \
             "$aligned_apk"
 
-          "$apksigner_bin" verify \
+          "$apksigner" verify \
             --verbose \
-            "$output_file"
+            "$output_apk"
 
-          echo "APK created and signed successfully:"
-          ls -lh "$output_file"
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: HEC-2.6.0-${{ matrix.variant }}
-          path: build/HEC-${{ matrix.variant }}-2.6.0.apk
-          if-no-files-found: error
-          build_script="$(find assembled \
-            -type f \
-            -name "build-apk.sh" \
-            -print \
-            -quit || true)"
-
-          if [[ -n "$build_script" ]]; then
-            echo "Using build script: $build_script"
-
-            project_dir="$(dirname "$build_script")"
-            script_name="$(basename "$build_script")"
-
-            chmod +x "$build_script"
-
-            (
-              cd "$project_dir"
-              bash "./$script_name"
-            )
-          else
-            gradlew="$(find assembled \
-              -type f \
-              -name "gradlew" \
-              -print \
-              -quit || true)"
-
-            if [[ -n "$gradlew" ]]; then
-              echo "Using Gradle wrapper: $gradlew"
-
-              project_dir="$(dirname "$gradlew")"
-
-              chmod +x "$gradlew"
-
-              (
-                cd "$project_dir"
-                ./gradlew assembleDebug \
-                  --no-daemon \
-                  --stacktrace
-              )
-            else
-              echo "::error::Neither build-apk.sh nor gradlew was found."
-              find assembled -maxdepth 8 -type f | sort
-              exit 1
-            fi
-          fi
-
-          apk_file="$(find assembled \
-            -type f \
-            -name "HEC-phase1-debug.apk" \
-            -print \
-            -quit || true)"
-
-          if [[ -z "$apk_file" ]]; then
-            apk_file="$(find assembled \
-              -type f \
-              -path "*/build/outputs/apk/*.apk" \
-              -print \
-              -quit || true)"
-          fi
-
-          if [[ -z "$apk_file" ]]; then
-            echo "::error::Build completed but no APK was found."
-            find assembled -maxdepth 8 -type f | sort
-            exit 1
-          fi
-
-          echo "APK found: $apk_file"
-
-          unsigned_apk="$apk_file"
-          aligned_apk="build/HEC-${HEC_APP_ROLE}-aligned.apk"
-          output_file="build/HEC-${HEC_APP_ROLE}-2.6.0.apk"
-          keystore="build/hec-release.keystore"
-
-          keytool -genkeypair -v \
-            -keystore "$keystore" \
-            -storepass android \
-            -keypass android \
-            -alias hec \
-            -keyalg RSA \
-            -keysize 2048 \
-            -validity 10000 \
-            -dname "CN=HEC, OU=HEC, O=HEC, C=YE"
-
-          zipalign_bin="$ANDROID_HOME/build-tools/35.0.0/zipalign"
-          apksigner_bin="$ANDROID_HOME/build-tools/35.0.0/apksigner"
-
-          test -x "$zipalign_bin"
-          test -x "$apksigner_bin"
-
-          "$zipalign_bin" -f -p 4 \
-            "$unsigned_apk" \
-            "$aligned_apk"
-
-          "$apksigner_bin" sign \
-            --ks "$keystore" \
-            --ks-pass pass:android \
-            --key-pass pass:android \
-            --v1-signing-enabled true \
-            --v2-signing-enabled true \
-            --v3-signing-enabled true \
-            --out "$output_file" \
-            "$aligned_apk"
-
-          "$apksigner_bin" verify \
-            --verbose \
-            "$output_file"
-
-          echo "APK created and signed successfully:"
-          ls -lh "$output_file"
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: HEC-2.6.0-${{ matrix.variant }}
-          path: build/HEC-${{ matrix.variant }}-2.6.0.apk
-          if-no-files-found: error
-          build_script="$(find assembled \
-            -type f \
-            -name "build-apk.sh" \
-            -print \
-            -quit || true)"
-
-          if [[ -n "$build_script" ]]; then
-            echo "Using build script: $build_script"
-
-            project_dir="$(dirname "$build_script")"
-            script_name="$(basename "$build_script")"
-
-            chmod +x "$build_script"
-
-            (
-              cd "$project_dir"
-              bash "./$script_name"
-            )
-          else
-            gradlew="$(find assembled \
-              -type f \
-              -name "gradlew" \
-              -print \
-              -quit || true)"
-
-            if [[ -n "$gradlew" ]]; then
-              echo "Using Gradle wrapper: $gradlew"
-
-              project_dir="$(dirname "$gradlew")"
-
-              chmod +x "$gradlew"
-
-              (
-                cd "$project_dir"
-                ./gradlew assembleDebug \
-                  --no-daemon \
-                  --stacktrace
-              )
-            else
-              echo "::error::Neither build-apk.sh nor gradlew was found."
-              find assembled -maxdepth 8 -type f | sort
-              exit 1
-            fi
-          fi
-
-          apk_file="$(find assembled \
-            -type f \
-            -name "*.apk" \
-            -print \
-            -quit || true)"
-
-          if [[ -z "$apk_file" ]]; then
-            echo "::error::Build completed but no APK was found."
-            find assembled -maxdepth 8 -type f | sort
-            exit 1
-          fi
-
-          output_file="build/HEC-${HEC_APP_ROLE}-2.6.0.apk"
-
-          cp "$apk_file" "$output_file"
-
-          echo "APK created successfully:"
-          ls -lh "$output_file"
+          ls -lh "$output_apk"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
