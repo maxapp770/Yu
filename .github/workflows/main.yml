@@ -1,0 +1,60 @@
+name: HEC Android Cloud Build
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build ${{ matrix.variant }} APK
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        variant: [customer, admin]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract source parts
+        run: |
+          set -e
+          mkdir -p assembled
+          for file in 01-android-project.zip 02-service.zip 03-web-assets.zip 04-docs-and-tests.zip; do
+            test -f "$file"
+            unzip -q -o "$file" -d assembled
+          done
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Build APK
+        env:
+          HEC_APP_ROLE: ${{ matrix.variant }}
+          HEC_SERVICE_ORIGIN: https://hec-service-review.fadhel-motaher.chatgpt.site
+        run: |
+          set -e
+          mkdir -p build
+
+          script=$(find assembled -type f -name build-apk.sh -print -quit)
+
+          if [ -n "$script" ]; then
+            dir=$(dirname "$script")
+            chmod +x "$script"
+            cd "$dir"
+            bash ./build-apk.sh
+            cd -
+          else
+            gradle=$(find assembled -
