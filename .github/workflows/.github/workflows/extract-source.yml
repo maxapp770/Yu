@@ -1,0 +1,62 @@
+name: Extract HEC source into repository
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Extract and merge source parts
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+
+          rm -rf .source-extracted
+          mkdir -p .source-extracted
+
+          for archive in \
+            01-android-project.zip \
+            02-service.zip \
+            03-web-assets.zip \
+            04-docs-and-tests.zip
+          do
+            test -f "$archive" || {
+              echo "::error::Missing archive: $archive"
+              exit 1
+            }
+
+            unzip -q -o "$archive" -d .source-extracted
+          done
+
+          rsync -a \
+            --exclude ".git/" \
+            --exclude ".github/" \
+            .source-extracted/ ./
+
+          rm -rf .source-extracted
+
+      - name: Commit extracted source
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No source changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Extract HEC Android source and documentation"
+          git push
