@@ -1,0 +1,62 @@
+[
+  {
+    "args": [
+      "shell",
+      "input",
+      "keyevent",
+      "82"
+    ],
+    "code": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "args": [
+      "shell",
+      "settings",
+      "put",
+      "global",
+      "window_animation_scale",
+      "0"
+    ],
+    "code": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "args": [
+      "shell",
+      "settings",
+      "put",
+      "global",
+      "transition_animation_scale",
+      "0"
+    ],
+    "code": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "args": [
+      "shell",
+      "settings",
+      "put",
+      "global",
+      "animator_duration_scale",
+      "0"
+    ],
+    "code": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "args": [
+      "push",
+      "/workspace/scratch/63c17c50a6b0/hec-android/build/HEC-phase1-debug.apk",
+      "/data/local/tmp/hec.apk"
+    ],
+    "code": 0,
+    "out": "",
+    "err": "/workspace/scratch/63c17c50a6b0/hec-android/build/HEC-phase1-debug.apk: 1 file pushed, 0 skipped. 1003.2 MB/s (1764777 bytes in 0.002s)\n"
+  }
+]

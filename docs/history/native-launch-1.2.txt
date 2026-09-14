@@ -1,0 +1,13 @@
+HEC+ 1.2.0-phase1, final APK
+Android 10 API29 x86_64 / 360x800 / software emulator
+Serving...
+Performing Incremental Install
+Unknown command: install-incremental
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.alhaitham.hec.preview/com.alhaitham.hec.MainActivity }
+
+    mResumedActivity: ActivityRecord{aff19ab u0 com.alhaitham.hec.preview/com.alhaitham.hec.MainActivity t8}
+ ResumedActivity:ActivityRecord{aff19ab u0 com.alhaitham.hec.preview/com.alhaitham.hec.MainActivity t8}
+  ResumedActivity: ActivityRecord{aff19ab u0 com.alhaitham.hec.preview/com.alhaitham.hec.MainActivity t8}
+Final captured AndroidRuntime/chromium error log: no matching errors

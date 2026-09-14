@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "Customer package has no dashboard, preview login or administrative routes",
+    "Customer rating still works after separation",
+    "No-server state is explicit, without claiming a live connection",
+    "Separate administrator app opens with server-authenticated role check",
+    "Settings load server choices and prevent enabling unsupported workflow adapters",
+    "Company changes reset dependent lists; selected configuration saves to server",
+    "An admin content edit reaches a distinct customer app through the shared service contract",
+    "Customer mapping form offers server-backed user, customer and company dropdowns",
+    "Lost order reply retries with the same idempotency key and clears the cart only after confirmation",
+    "Customer password is not retained in local storage",
+    "Both applications fit 320/390/460px phones without horizontal overflow",
+    "Local admin review is isolated from ERP credentials and unavailable in the customer APK",
+    "No browser runtime errors"
+  ],
+  "errors": [],
+  "backend": "mock contract only; target server unreachable"
+}

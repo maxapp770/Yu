@@ -1,0 +1,20 @@
+[Unit]
+Description=HEC publication scheduler
+After=network-online.target
+
+[Service]
+User=hec-store
+Group=hec-store
+WorkingDirectory=/opt/hec/service
+EnvironmentFile=/var/lib/hec-store/.env
+ExecStart=/opt/hec/service/.venv/bin/python -m hec_service.server --scheduler
+Restart=on-failure
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/hec-store
+
+[Install]
+WantedBy=multi-user.target

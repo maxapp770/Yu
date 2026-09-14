@@ -1,0 +1,9 @@
+PASS Every packaged catalog and campaign image exists
+PASS No duplicate catalog IDs or dangling campaign product references
+PASS All entrypoint scripts and styles are bundled, with restrictive CSP
+PASS Android requests only camera and Internet; storage permissions and backups stay disabled
+PASS WebView isolates network in the native allowlisted bridge and disables file access, mixed content and debugging
+PASS New resources are explicit in the native resource allowlist
+PASS APK and Gradle version and signing configuration agree
+PASS Native scanner is private, accelerated, permission-gated and releases camera
+8 package and security checks passed

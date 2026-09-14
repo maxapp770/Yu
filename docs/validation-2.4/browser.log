@@ -1,0 +1,14 @@
+{
+  "passed": 8,
+  "checks": [
+    "Admin uploads a valid video, links products/groups, saves a non-public draft",
+    "Customer receives only published reels and left shortcut expands to the right",
+    "Data saver avoids preloading; click plays an actual local video",
+    "Vertical paging pauses and releases the previous video",
+    "Published video rings open group feed; product detail offers its video button",
+    "Customer layout fits 320, 390 and 760px without horizontal overflow",
+    "Settings editor persists count, ring palette and ordered source controls",
+    "No JavaScript runtime errors"
+  ],
+  "errors": []
+}

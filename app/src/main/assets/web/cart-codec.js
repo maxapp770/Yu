@@ -1,0 +1,12 @@
+'use strict';
+/* Portable, bounded shared-cart format. Carries catalog snapshots, never identities or credentials. */
+(function(g){
+ const MAX_LINES=100,MAX_TOKEN=65536;
+ const plain=x=>x&&typeof x==='object'&&!Array.isArray(x),id=x=>typeof x==='string'&&/^[A-Za-z0-9_-]{1,80}$/.test(x);
+ function validate(value){if(!plain(value)||value.v!==1||!Array.isArray(value.lines)||!value.lines.length||value.lines.length>MAX_LINES)throw Error('السلة المشتركة غير صالحة');const seen=new Set();const lines=value.lines.map(r=>{if(!Array.isArray(r)||r.length!==6||!id(r[0])||!(r[1]===''||id(r[1]))||!Number.isInteger(r[2])||r[2]<1||r[2]>999||typeof r[3]!=='string'||r[3].length<1||r[3].length>180||typeof r[4]!=='string'||r[4].length>100||typeof r[5]!=='number'||!Number.isFinite(r[5])||r[5]<0||r[5]>1e9)throw Error('بيانات صنف غير صالحة');const k=r[0]+'~'+r[1];if(seen.has(k))throw Error('الصنف مكرر في الرابط');seen.add(k);return [r[0],r[1],r[2],r[3],r[4],r[5]]});return {v:1,lines}}
+ function encode(value){const s=JSON.stringify(validate(value));const token=btoa(unescape(encodeURIComponent(s))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');if(token.length>MAX_TOKEN)throw Error('السلة أكبر من الحد المسموح للمشاركة');return token}
+ function decode(token){if(typeof token!=='string'||token.length>MAX_TOKEN||!token||!/^[A-Za-z0-9_-]+$/.test(token))throw Error('رابط السلة غير صالح');try{return validate(JSON.parse(decodeURIComponent(escape(atob(token.replace(/-/g,'+').replace(/_/g,'/'))))))}catch(e){throw Error('تعذر قراءة السلة المشتركة')}}
+ function tokenFrom(text,origin){if(typeof text!=='string'||text.length>100000)throw Error('رابط غير صالح');const escaped=origin.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');const m=text.match(new RegExp('(?:'+escaped+'/#[c]art=|hec://cart/)([A-Za-z0-9_-]{1,65536})(?![A-Za-z0-9_-])'));if(!m)throw Error('ألصق رابط سلة الهيثم الصحيح');decode(m[1]);return m[1]}
+ function message(value,url){const c=validate(value);return 'سلة التسوق — الهيثم\n'+c.lines.map((r,i)=>(i+1)+'. '+r[3]+(r[4]?' ('+r[4]+')':'')+' × '+r[2]+' — '+(r[5]*r[2]).toLocaleString('en-US')+' ر.ي').join('\n')+'\nالإجمالي وقت المشاركة: '+c.lines.reduce((n,r)=>n+r[5]*r[2],0).toLocaleString('en-US')+' ر.ي\nعرض السلة وإضافتها إلى تطبيق الهيثم:\n'+url}
+ g.HECCartCodec=Object.freeze({encode,decode,validate,tokenFrom,message,MAX_LINES,MAX_TOKEN});
+})(typeof window==='undefined'?globalThis:window);

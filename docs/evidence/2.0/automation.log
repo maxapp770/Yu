@@ -1,0 +1,75 @@
+PASS Home renders source banner and first products
+PASS Quantity increase and add preserve quantity and total
+PASS Second product adds into combined total
+PASS Cart minimum is one
+PASS Deletion requires confirmation
+PASS Favorites toggle and persist
+PASS Name search returns relevant results
+PASS Product-code search
+PASS Empty result state
+PASS Search text is escaped
+PASS Filter offers only
+PASS Sort price ascending
+PASS Checkout saves local draft with exact snapshot and clears cart
+PASS Addresses escaped and persisted
+PASS Persistent state restores on new app session
+PASS Malformed storage recovers
+PASS Unknown product and order safe empty states
+PASS All defined screens render
+PASS Corrupt quantities and unknown IDs are normalized
+PASS Same product retains independent small and large lines and prices
+PASS Changing one variant quantity never changes the other line
+PASS Variant state survives a restart with correct prices
+PASS Opening cart detail restores the selected line variant
+PASS Variant merge conserves quantity and updates the unit price
+PASS Variant checkout records label and exact price snapshot
+PASS Variant merge over 999 is rejected without loss
+PASS Invalid multi-part and nonexistent variant IDs cannot become cart lines
+PASS Filtered catalog does not duplicate featured products
+PASS Department drilldown and empty category render
+PASS Global-only filter is cleared by a fresh search
+PASS Courier screens render through all defined routes
+PASS Courier availability prevents accepting new offers while offline
+PASS Accepting an offer twice only transitions it once
+PASS Rejecting a different offer needs confirmation and never changes accepted ones
+PASS Delivery cannot jump directly from accepted to delivered
+PASS Confirmed cash delivery updates earnings and collection exactly once
+PASS Courier transitions and totals survive restart
+PASS Prepaid deliveries do not collect cash again
+PASS Courier password is cleared and never stored during offline sign-in
+PASS Profile input is escaped and password change clears its form
+PASS All four tracking stages have the correct completed connectors
+PASS A zero-delivery account persists and has clear empty states
+PASS Corrupted courier amounts cannot alter demo financial fixtures
+PASS Failed cart write rolls back and retry saves exactly once
+PASS Failed checkout keeps cart and creates no phantom order
+PASS Local schema drops invalid orders and unknown private fields
+PASS Canonical variant aliases merge once and malformed keys are discarded
+PASS Stale quantity events cannot create or change other product lines
+PASS Arabic search accepts spelling variants and Arabic product-code digits
+PASS Whitespace names and punctuation-only phones cannot save drafts
+PASS Draft identifiers remain distinct even at identical clock timestamps
+PASS Undo restores only the deleted line and cannot duplicate it
+PASS Privacy clear needs confirmation and only clears the selected role
+PASS Failed privacy clear preserves the saved customer data
+PASS Courier preview requires explicit entry and logout blocks history routes
+PASS Failed courier transition rolls back and retry is consistent
+PASS Cash delivery requires explicit collection confirmation
+PASS Courier privacy clear persists empty data and ends preview access
+PASS Hostile and unknown route text never becomes active HTML
+PASS Restored prepaid fixtures cannot acquire a second cash collection
+60 functional checks passed
+PASS Low, high and zero movement distinguish missing data and filter exact window
+PASS Stock filters need current snapshot; stale and unknown never become zero
+PASS New/updated/image filters and exclusions use catalog metadata
+PASS Templates support dates, item name, count and price without misleading low-movement claims
+PASS Schedule observes local daily clock, weekly weekday, quiet hours and manual mode
+PASS One atomic run creates notifications, homepage publication and newsletter, with duplicate protection
+PASS Selected audience excludes other customers; opt-out still excludes marketing notifications
+PASS Expired or disabled rules cannot publish or keep promotions live
+PASS Storage failure never records success, consumes a slot or publishes partially
+PASS Missing ERP metrics skip publication and record reason instead of fabricated matches
+PASS ERP normalization preserves verified zero but rejects empty/null metrics and naive stock timestamps
+PASS Rolling new-item windows include today, while sales use completed days
+PASS Foreground scheduler executes an enabled due rule without a manual click
+13 automation checks passed

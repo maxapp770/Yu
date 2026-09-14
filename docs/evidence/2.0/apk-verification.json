@@ -1,0 +1,12 @@
+{
+  "customer": {
+    "sha256": "7d232aa171b647bf1087a671fcb1d55ce49c3a504f910822b55bd3a69103b6b9",
+    "bytes": 2089397,
+    "assets_verified": 106
+  },
+  "admin": {
+    "sha256": "847c3aee08da91945273893e4565ee2737f4782fbb7ebc19f67b5b6a29fbae21",
+    "bytes": 2135121,
+    "assets_verified": 115
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "apkVersion": "1.3.0-phase1",
+  "versionCode": 4,
+  "device": "Android 10 API29 x86_64, 360x800, software emulation",
+  "install": [
+    {
+      "args": [
+        "push",
+        "/workspace/scratch/63c17c50a6b0/hec-android/build/HEC-phase1-debug.apk",
+        "/data/local/tmp/hec-final.apk"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "pm",
+        "install",
+        "-r",
+        "/data/local/tmp/hec-final.apk"
+      ],
+      "code": 0,
+      "out": "Success\n"
+    },
+    {
+      "args": [
+        "shell",
+        "am",
+        "force-stop",
+        "com.alhaitham.hec.preview"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "am",
+        "start",
+        "-n",
+        "com.alhaitham.hec.preview/com.alhaitham.hec.MainActivity"
+      ],
+      "code": 0,
+      "out": "Starting: Intent { cmp=com.alhaitham.hec.preview/com.alhaitham.hec.MainActivity }\n"
+    },
+    {
+      "args": [
+        "shell",
+        "input",
+        "tap",
+        "35",
+        "752"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "input",
+        "swipe",
+        "180",
+        "690",
+        "180",
+        "220",
+        "400"
+      ],
+      "code": 0,
+      "out": ""
+    }
+  ],
+  "actions": [
+    {
+      "args": [
+        "shell",
+        "input",
+        "swipe",
+        "180",
+        "680",
+        "180",
+        "160",
+        "500"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "input",
+        "tap",
+        "324",
+        "752"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "input",
+        "tap",
+        "180",
+        "752"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "input",
+        "tap",
+        "324",
+        "752"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "dumpsys",
+        "package",
+        "com.alhaitham.hec.preview"
+      ],
+      "code": 0,
+      "out": "Activity Resolver Table:\n  Non-Data Actions:\n      android.intent.action.MAIN:\n        16bb3e9 com.alhaitham.hec.preview/com.alhaitham.hec.MainActivity filter c9f7c13\n          Action: \"android.intent.action.MAIN\"\n          Category: \"android.intent.category.LAUNCHER\"\n\nKey Set Manager:\n  [com.alhaitham.hec.preview]\n      Signing KeySets: 6\n\nPackages:\n  Package [com.alhaitham.hec.preview] (957d536):\n    userId=10116\n    pkg=Package{ae2c86e com.alhaitham.hec.preview}\n    codePath=/data/app/com.alhaitham.hec.preview-SzX_ZRq3jA5xnYKVZRO3zA==\n    resourcePath=/data/app/com.alhaitham.hec.preview-SzX_ZRq3jA5xnYKVZRO3zA==\n    legacyNativeLibraryDir=/data/app/com.alhaitham.hec.preview-SzX_ZRq3jA5xnYKVZRO3zA==/lib\n    primaryCpuAbi=null\n    secondaryCpuAbi=null\n    versionCode=4 minSdk=29 targetSdk=35\n    versionName=1.3.0-phase1\n    splits=[base]\n    apkSigningVersion=3\n    applicationInfo=ApplicationInfo{eb50b0f com.alhaitham.hec.preview}\n    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]\n    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE ]\n    dataDir=/data/user/0/com.alhaitham.hec.preview\n    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]\n    timeStamp=2026-09-11 12:58:59\n    firstInstallTime=2026-09-11 12:46:14\n    lastUpdateTime=2026-09-11 12:59:02\n    signatures=PackageSignatures{e0f8f0d version:3, signatures:[b5ff3f4e], past signatures:[]}\n    installPermissionsFixed=true\n    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]\n    User 0: ceDataInode=123329 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false\n      runtime permissions:\n\nPackage Changes:\n  Sequence number=30\n  User 0:\n    seq=0, package=com.android.permissioncontroller\n    seq=1, package=com.android.systemui\n    seq=3, package=com.android.sdksetup\n    seq=4, package=com.android.provision\n    seq=10, package=com.android.messaging\n    seq=11, package=com.android.settings\n    seq=12, package=com.android.calendar\n    seq=13, package=com.android.camera2\n    seq=21, package=com.android.gallery3d\n    seq=22, package=com.android.inputmethod.latin\n    seq=23, package=com.android.nfc\n    seq=24, package=com.android.stk\n    seq=26, package=com.android.traceur\n    seq=28, package=com.android.email\n    seq=29, package=com.alhaitham.hec.preview\n\n\nDexopt state:\n  [com.alhaitham.hec.preview]\n    path: /data/app/com.alhaitham.hec.preview-SzX_ZRq3jA5xnYKVZRO3zA==/base.apk\n      x86_64: [status=speed-profile] [reason=install]\n\n\nCompiler stats:\n  [com.alhaitham.hec.preview]\n     base.apk - 10483\n\nActive APEX packages:\n\n\nInactive APEX packages:\n\n\nFactory APEX packages:\n\n\n  APEX session state:\n"
+    },
+    {
+      "args": [
+        "logcat",
+        "-d",
+        "-t",
+        "150",
+        "AndroidRuntime:E",
+        "chromium:E",
+        "*:S"
+      ],
+      "code": 0,
+      "out": "--------- beginning of main\n--------- beginning of system\n"
+    }
+  ],
+  "observations": [
+    "System UI ANR during emulator initialization; dismissed system dialog and retried launch.",
+    "Installed final APK with pm install -r: Success.",
+    "Viewed customer account and confirmed absence of admin preview entry.",
+    "Viewed offers and native exit confirmation.",
+    "Final filtered AndroidRuntime/chromium log contained no error records.",
+    "Dismissed exit confirmation and visually verified final home; Activity resumed confirmed by dumpsys."
+  ],
+  "limits": [
+    "No physical phone performance testing.",
+    "Administrative authorized state tested with browser-only server fixture, not connected ERPNext."
+  ],
+  "final_confirmation": [
+    {
+      "args": [
+        "shell",
+        "input",
+        "tap",
+        "227",
+        "435"
+      ],
+      "code": 0,
+      "out": ""
+    },
+    {
+      "args": [
+        "shell",
+        "dumpsys",
+        "activity",
+        "activities"
+      ],
+      "code": 0,
+      "out": "w360dp w360dp h776dp 160dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 360, 800) mAppBounds=Rect(0, 0 - 360, 800) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=home mAlwaysOnTop=undefined mRotation=ROTATION_0} s.2}\n          RequestedOverrideConfiguration={0.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?ldr ?wideColorGamut ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mWindowingMode=undefined mDisplayWindowingMode=undefined mActivityType=home mAlwaysOnTop=undefined mRotation=undefined}}\n          taskDescription: label=\"null\" icon=null iconResource=0 iconFilename=null primaryColor=fff5f5f5\n           backgroundColor=fffafafa\n           statusBarColor=0\n           navigationBarColor=0\n          launchFailed=false launchCount=0 lastLaunchTime=-19m0s251ms\n          haveState=true icicle=Bundle[mParcelledData.dataSize=3832]\n          state=STOPPED stopped=true delayedResume=false finishing=false\n          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_REMOVED\n          fullscreen=true noDisplay=false immersive=false launchMode=2\n          frozenBeforeDestroy=false forceNewConfig=false\n          mActivityType=home\n           nowVisible=false lastVisibleTime=-6m2s519ms\n          resizeMode=RESIZE_MODE_RESIZEABLE\n          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false\n\n    Running activities (most recent first):\n      TaskRecord{c5d5ac9 #5 I=com.android.launcher3/.Launcher U=0 StackId=0 sz=1}\n        Run #0: ActivityRecord{b4f0f8e u0 com.android.launcher3/.Launcher t5}\n\n    mLastPausedActivity: ActivityRecord{b4f0f8e u0 com.android.launcher3/.Launcher t5}\n\n ResumedActivity:ActivityRecord{7854a84 u0 com.alhaitham.hec.preview/com.alhaitham.hec.MainActivity t7}\n\n  ResumedActivity: ActivityRecord{7854a84 u0 com.alhaitham.hec.preview/com.alhaitham.hec.MainActivity t7}\n\nActivityStackSupervisor state:\n  topDisplayFocusedStack=ActivityStack{5df15ce stackId=2 type=standard mode=fullscreen visible=true translucent=false, 1 tasks}\n  displayId=0 stacks=2\n   mHomeStack=ActivityStack{3f53cef stackId=0 type=home mode=fullscreen visible=false translucent=true, 1 tasks}\n   mPreferredTopFocusableStack=ActivityStack{5df15ce stackId=2 type=standard mode=fullscreen visible=true translucent=false, 1 tasks}\n   mLastFocusedStack=ActivityStack{5df15ce stackId=2 type=standard mode=fullscreen visible=true translucent=false, 1 tasks}\n  mCurTaskIdForUser={0=7}\n  mUserStackInFront={}\n  isHomeRecentsComponent=true  KeyguardController:\n    mKeyguardShowing=false\n    mAodShowing=false\n    mKeyguardGoingAway=false\n    Occluded=false DismissingKeyguardActivity=null at display=0\n    mDismissalRequested=false\n    mVisibilityTransactionDepth=0\n  LockTaskController\n    mLockTaskModeState=NONE\n    mLockTaskModeTasks=\n    mLockTaskPackages (userId:packages)=\n      u0:[]\n"
+    }
+  ]
+}

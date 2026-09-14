@@ -1,0 +1,9 @@
+PASS Rating opens, saves, displays and survives page reload
+PASS Product Web Share and readable copy fallback both work
+PASS Larger full navigation targets accept taps around icons without passing through
+PASS Top arrow is available beyond home with translucent background and retained 48px size
+PASS Saving hidden loyalty removes its entry, product strip and direct access
+PASS Selected-customer override saves and persists over the general policy
+PASS Automation editor, live preview, manual run and newsletter log are connected
+PASS Automated home/inbox publications open matched products and obey notification opt-out
+PASS New screens fit 320, 360 and 412px phones without horizontal overflow

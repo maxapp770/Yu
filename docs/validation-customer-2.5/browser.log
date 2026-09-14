@@ -1,0 +1,12 @@
+PASS Customer boots with current assets and no admin dashboard or local admin account
+PASS Six packaged reels, glass shortcut, responsive sizing and saved preferences survive restart
+PASS Group image opens shopping; only its play badge opens reels
+PASS An actual packaged video plays on the Android asset origin without service access
+PASS Reels cart adds to the actual local basket; share invokes the native reel action
+PASS Product rating saves locally; product sharing and explicit favourite removal work
+PASS Native barcode callback selects the matching item
+PASS Floating basket remains movable with stored position
+PASS Shared basket has a review/import step and adds its items to the recipient basket
+PASS Courier connection entry remains available
+PASS Home, shopping, offers, catalogue, favourites, account and notifications fit 320/390/760px; large navigation and scroll helpers
+PASS Connected fixture: account login, reel like and matching favourite, comment creation and deletion use service operations

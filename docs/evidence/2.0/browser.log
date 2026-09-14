@@ -1,0 +1,13 @@
+PASS Customer package has no dashboard, preview login or administrative routes
+PASS Customer rating still works after separation
+PASS No-server state is explicit, without claiming a live connection
+PASS Separate administrator app opens with server-authenticated role check
+PASS Settings load server choices and prevent enabling unsupported workflow adapters
+PASS Company changes reset dependent lists; selected configuration saves to server
+PASS An admin content edit reaches a distinct customer app through the shared service contract
+PASS Customer mapping form offers server-backed user, customer and company dropdowns
+PASS Lost order reply retries with the same idempotency key and clears the cart only after confirmation
+PASS Customer password is not retained in local storage
+PASS Both applications fit 320/390/460px phones without horizontal overflow
+PASS Local admin review is isolated from ERP credentials and unavailable in the customer APK
+PASS No browser runtime errors

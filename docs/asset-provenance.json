@@ -1,0 +1,314 @@
+{
+  "source": "Uploaded One UI Home.mp4; crops from full-resolution frames at 1 fps. Images with unreadable source sections retain reference placeholders.",
+  "crops": {
+    "campaign-new": [
+      3,
+      [
+        0,
+        570,
+        712,
+        918
+      ]
+    ],
+    "campaign-shop": [
+      6,
+      [
+        0,
+        570,
+        712,
+        918
+      ]
+    ],
+    "campaign-limited": [
+      14,
+      [
+        0,
+        570,
+        712,
+        918
+      ]
+    ],
+    "campaign-affiliate": [
+      15,
+      [
+        0,
+        570,
+        712,
+        918
+      ]
+    ],
+    "campaign-growth": [
+      24,
+      [
+        0,
+        150,
+        712,
+        433
+      ]
+    ],
+    "campaign-global": [
+      26,
+      [
+        0,
+        150,
+        712,
+        452
+      ]
+    ],
+    "deal-home": [
+      3,
+      [
+        194,
+        1080,
+        510,
+        1320
+      ]
+    ],
+    "deal-price": [
+      15,
+      [
+        194,
+        1080,
+        510,
+        1320
+      ]
+    ],
+    "deal-hair": [
+      26,
+      [
+        7,
+        624,
+        247,
+        866
+      ]
+    ],
+    "golden-plates": [
+      26,
+      [
+        101,
+        958,
+        619,
+        1247
+      ]
+    ],
+    "cat-innovative": [
+      80,
+      [
+        490,
+        211,
+        695,
+        378
+      ]
+    ],
+    "banner-vacuum": [
+      80,
+      [
+        17,
+        540,
+        703,
+        812
+      ]
+    ],
+    "banner-irons": [
+      82,
+      [
+        17,
+        540,
+        703,
+        812
+      ]
+    ],
+    "banner-bikes": [
+      90,
+      [
+        17,
+        685,
+        703,
+        959
+      ]
+    ],
+    "banner-cleaning": [
+      92,
+      [
+        17,
+        678,
+        703,
+        941
+      ]
+    ],
+    "banner-fragrance": [
+      94,
+      [
+        17,
+        195,
+        703,
+        468
+      ]
+    ],
+    "cat-rack-plastic": [
+      90,
+      [
+        252,
+        352,
+        457,
+        526
+      ]
+    ],
+    "cat-basket": [
+      90,
+      [
+        490,
+        352,
+        695,
+        526
+      ]
+    ],
+    "cat-scooter": [
+      92,
+      [
+        490,
+        340,
+        695,
+        512
+      ]
+    ],
+    "cat-floor-cleaner": [
+      92,
+      [
+        490,
+        1072,
+        695,
+        1244
+      ]
+    ],
+    "cat-rug": [
+      94,
+      [
+        252,
+        601,
+        457,
+        775
+      ]
+    ],
+    "plate-white": [
+      99,
+      [
+        28,
+        566,
+        366,
+        826
+      ]
+    ],
+    "plate-floral": [
+      99,
+      [
+        384,
+        566,
+        711,
+        826
+      ]
+    ],
+    "utensils": [
+      102,
+      [
+        13,
+        510,
+        350,
+        772
+      ]
+    ],
+    "peeler": [
+      102,
+      [
+        370,
+        492,
+        709,
+        734
+      ]
+    ],
+    "rack-metal": [
+      103,
+      [
+        331,
+        515,
+        669,
+        772
+      ]
+    ],
+    "dish-cover": [
+      103,
+      [
+        1,
+        515,
+        312,
+        764
+      ]
+    ],
+    "scissors": [
+      104,
+      [
+        265,
+        518,
+        602,
+        772
+      ]
+    ],
+    "banner-scrub": [
+      88,
+      [
+        17,
+        1036,
+        703,
+        1307
+      ]
+    ],
+    "banner-kids-cars": [
+      91,
+      [
+        17,
+        579,
+        703,
+        852
+      ]
+    ]
+  },
+  "legacy_overlay_edge_trims": {
+    "jars": [
+      0,
+      37,
+      159,
+      159
+    ],
+    "knives": [
+      0,
+      35,
+      163,
+      137
+    ],
+    "slicer": [
+      0,
+      64,
+      332,
+      299
+    ],
+    "clipper": [
+      0,
+      22,
+      336,
+      267
+    ],
+    "pots": [
+      0,
+      37,
+      159,
+      152
+    ]
+  },
+  "verified_links": {
+    "facebook": {
+      "url": "https://www.facebook.com/HaithemEkhwanCenter/",
+      "evidence": "QR code decoded from SHOP NOW banner in uploaded video, independently matching frames 5, 6 and 7.",
+      "method": "zxing-cpp 3.1.1"
+    }
+  }
+}

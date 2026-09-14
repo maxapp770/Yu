@@ -1,0 +1,9 @@
+HEC+ 1.3.0-phase1, versionCode 4
+Android 10 API29 x86_64 / 360x800 / software emulator without KVM
+Final APK: pm install -r -> Success
+MainActivity: started successfully; account, offers, native exit confirmation visually inspected.
+Account footer: privacy and courier preview only; no admin preview entry.
+System UI ANR during emulator initialization was dismissed before checking app screens.
+Final AndroidRuntime/chromium filtered error log: no matching error records.
+See evidence/native-launch.json and screenshots/android-1.3/.
+Final state: home visible; dumpsys confirmed MainActivity is resumed.

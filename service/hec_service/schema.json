@@ -1,0 +1,2747 @@
+[
+  {
+    "id": "products",
+    "title": "المنتجات والمخزون",
+    "icon": "grid",
+    "description": "بيانات المنتج والأسعار والتوفر",
+    "fields": [
+      [
+        "title",
+        "اسم المنتج",
+        "text"
+      ],
+      [
+        "code",
+        "كود المنتج",
+        "text"
+      ],
+      [
+        "price",
+        "السعر",
+        "number"
+      ],
+      [
+        "isStockItem",
+        "صنف مخزني",
+        "checkbox"
+      ],
+      [
+        "barcodes",
+        "الباركودات، رمز في كل سطر",
+        "textarea"
+      ],
+      [
+        "category",
+        "القسم",
+        "text"
+      ],
+      [
+        "brand",
+        "العلامة التجارية",
+        "text"
+      ],
+      [
+        "stock",
+        "الرصيد المتاح",
+        "readonly"
+      ],
+      [
+        "unit",
+        "وحدة البيع",
+        "text"
+      ],
+      [
+        "description",
+        "الوصف والمواصفات",
+        "textarea"
+      ],
+      [
+        "variants",
+        "خيارات الألوان والمقاسات",
+        "textarea"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "categories",
+    "title": "الأقسام والتصنيفات",
+    "icon": "grid",
+    "description": "الاختصارات والتصنيفات الفرعية",
+    "fields": [
+      [
+        "title",
+        "اسم القسم",
+        "text"
+      ],
+      [
+        "parent",
+        "القسم الأب",
+        "text"
+      ],
+      [
+        "children",
+        "التصنيفات الفرعية",
+        "children"
+      ],
+      [
+        "productIds",
+        "أصناف المجموعة",
+        "products"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "home",
+    "title": "تخطيط الرئيسية والنصوص والحركة",
+    "icon": "home",
+    "description": "ترتيب كل جزء وعنوانه ومواعيده وأسلوب حركته",
+    "fields": [
+      [
+        "title",
+        "اسم الجزء في الإدارة",
+        "readonly"
+      ],
+      [
+        "displayTitle",
+        "النص الظاهر للعميل",
+        "text"
+      ],
+      [
+        "subtitle",
+        "نص مساعد",
+        "textarea"
+      ],
+      [
+        "source",
+        "مصدر هذا الجزء",
+        "select",
+        [
+          "shortcuts",
+          "marketing",
+          "reels",
+          "products",
+          "banner"
+        ]
+      ],
+      [
+        "showTitle",
+        "إظهار العنوان",
+        "checkbox"
+      ],
+      [
+        "buttonText",
+        "نص زر عرض الكل",
+        "text"
+      ],
+      [
+        "position",
+        "ترتيب الجزء",
+        "number"
+      ],
+      [
+        "motion",
+        "العرض والحركة",
+        "motion"
+      ],
+      [
+        "gallery",
+        "معرض إضافي لهذا الجزء",
+        "gallery"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "إيقاف الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ],
+    "noCreate": true
+  },
+  {
+    "id": "campaigns",
+    "title": "الحملات والعروض",
+    "icon": "store",
+    "description": "اختيار صنف العرض غير المخزني ومكوناته وسعره وتوقيته",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "sourceType",
+        "مصدر العرض",
+        "select",
+        [
+          "Product Bundle",
+          "Promotional Scheme"
+        ]
+      ],
+      [
+        "sourceId",
+        "معرّف المستند في ERPNext",
+        "text"
+      ],
+      [
+        "parentItem",
+        "الصنف الأب غير المخزني",
+        "item"
+      ],
+      [
+        "parentName",
+        "اسم الصنف كما في النظام",
+        "text"
+      ],
+      [
+        "parentQty",
+        "كمية صنف العرض عند الإضافة",
+        "number"
+      ],
+      [
+        "parentRate",
+        "سعر وحدة صنف العرض",
+        "number"
+      ],
+      [
+        "useParentValues",
+        "إنزال اسم وكمية وسعر الصنف كما هي",
+        "checkbox"
+      ],
+      [
+        "total",
+        "إجمالي سعر العرض للوحدة",
+        "number"
+      ],
+      [
+        "allocation",
+        "أصناف الحزمة وتوزيع السعر",
+        "allocation"
+      ],
+      [
+        "startsAt",
+        "بداية العرض",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "نهاية العرض",
+        "datetime-local"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "gallery",
+        "صور العرض الإضافية ووجهاتها",
+        "gallery"
+      ],
+      [
+        "seconds",
+        "مدة صورة العرض الرئيسية (ثانية)",
+        "number"
+      ],
+      [
+        "useOwnSeconds",
+        "مدة مستقلة لصورة العرض الرئيسية",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "golden",
+    "title": "الساعة الذهبية",
+    "icon": "tag",
+    "description": "اختيار صنف العرض غير المخزني ومكوناته وسعره وتوقيته",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "sourceType",
+        "مصدر العرض",
+        "select",
+        [
+          "Product Bundle",
+          "Promotional Scheme"
+        ]
+      ],
+      [
+        "sourceId",
+        "معرّف المستند في ERPNext",
+        "text"
+      ],
+      [
+        "parentItem",
+        "الصنف الأب غير المخزني",
+        "item"
+      ],
+      [
+        "parentName",
+        "اسم الصنف كما في النظام",
+        "text"
+      ],
+      [
+        "parentQty",
+        "كمية صنف العرض عند الإضافة",
+        "number"
+      ],
+      [
+        "parentRate",
+        "سعر وحدة صنف العرض",
+        "number"
+      ],
+      [
+        "useParentValues",
+        "إنزال اسم وكمية وسعر الصنف كما هي",
+        "checkbox"
+      ],
+      [
+        "total",
+        "إجمالي سعر العرض للوحدة",
+        "number"
+      ],
+      [
+        "allocation",
+        "أصناف الحزمة وتوزيع السعر",
+        "allocation"
+      ],
+      [
+        "startsAt",
+        "بداية العرض",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "نهاية العرض",
+        "datetime-local"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "gallery",
+        "صور العرض الإضافية ووجهاتها",
+        "gallery"
+      ],
+      [
+        "seconds",
+        "مدة صورة العرض الرئيسية (ثانية)",
+        "number"
+      ],
+      [
+        "useOwnSeconds",
+        "مدة مستقلة لصورة العرض الرئيسية",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "orders",
+    "title": "الطلبات",
+    "icon": "cart",
+    "description": "مراجعة الطلبات وتحديث سير العمل",
+    "fields": [
+      [
+        "title",
+        "رقم الطلب",
+        "readonly"
+      ],
+      [
+        "customer",
+        "العميل",
+        "readonly"
+      ],
+      [
+        "total",
+        "الإجمالي",
+        "readonly"
+      ],
+      [
+        "status",
+        "الحالة",
+        "select",
+        [
+          "بانتظار المراجعة",
+          "قيد التجهيز",
+          "جاهز للتوصيل",
+          "مكتمل",
+          "ملغي"
+        ]
+      ],
+      [
+        "note",
+        "ملاحظة إدارية",
+        "textarea"
+      ]
+    ],
+    "noCreate": true
+  },
+  {
+    "id": "returns",
+    "title": "المرتجعات",
+    "icon": "refresh",
+    "description": "طلبات الإرجاع والمراجعة",
+    "fields": [
+      [
+        "title",
+        "رقم المرتجع",
+        "readonly"
+      ],
+      [
+        "order",
+        "الطلب",
+        "readonly"
+      ],
+      [
+        "reason",
+        "السبب",
+        "readonly"
+      ],
+      [
+        "status",
+        "الحالة",
+        "select",
+        [
+          "بانتظار المراجعة",
+          "مقبول",
+          "مرفوض",
+          "مكتمل"
+        ]
+      ],
+      [
+        "note",
+        "ملاحظة المراجعة",
+        "textarea"
+      ]
+    ],
+    "noCreate": true
+  },
+  {
+    "id": "wallet",
+    "title": "المحفظة وطلبات الرصيد",
+    "icon": "store",
+    "description": "مراجعة الطلبات دون تعديل الأرصدة مباشرة",
+    "fields": [
+      [
+        "title",
+        "رقم الطلب",
+        "readonly"
+      ],
+      [
+        "customer",
+        "العميل",
+        "readonly"
+      ],
+      [
+        "amount",
+        "المبلغ",
+        "readonly"
+      ],
+      [
+        "status",
+        "الحالة",
+        "select",
+        [
+          "بانتظار المراجعة",
+          "مقبول",
+          "مرفوض"
+        ]
+      ],
+      [
+        "note",
+        "ملاحظة المراجعة",
+        "textarea"
+      ]
+    ],
+    "noCreate": true
+  },
+  {
+    "id": "loyalty",
+    "title": "سياسة نقاط الولاء",
+    "icon": "tag",
+    "description": "قواعد الاكتساب والاستبدال",
+    "fields": [
+      [
+        "title",
+        "اسم السياسة",
+        "text"
+      ],
+      [
+        "earnRate",
+        "قيمة الشراء لكل نقطة",
+        "number"
+      ],
+      [
+        "redeemRate",
+        "قيمة النقطة عند الاستبدال",
+        "number"
+      ],
+      [
+        "expiryDays",
+        "مدة صلاحية النقاط بالأيام",
+        "number"
+      ],
+      [
+        "active",
+        "السياسة مفعّلة",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "affiliate",
+    "title": "التسويق بالعمولة",
+    "icon": "share",
+    "description": "طلبات الاشتراك وسياسة العمولة",
+    "fields": [
+      [
+        "title",
+        "اسم المسوّق أو السياسة",
+        "text"
+      ],
+      [
+        "commission",
+        "نسبة العمولة %",
+        "number"
+      ],
+      [
+        "status",
+        "الحالة",
+        "select",
+        [
+          "بانتظار المراجعة",
+          "معتمد",
+          "موقوف"
+        ]
+      ],
+      [
+        "note",
+        "ملاحظات",
+        "textarea"
+      ]
+    ]
+  },
+  {
+    "id": "messages",
+    "title": "الرسائل والدعم",
+    "icon": "chat",
+    "description": "صندوق الوارد ومتابعة الردود",
+    "fields": [
+      [
+        "title",
+        "الموضوع",
+        "readonly"
+      ],
+      [
+        "customer",
+        "العميل",
+        "readonly"
+      ],
+      [
+        "body",
+        "نص الرسالة",
+        "readonly"
+      ],
+      [
+        "reply",
+        "الرد المقترح",
+        "textarea"
+      ],
+      [
+        "status",
+        "الحالة",
+        "select",
+        [
+          "جديدة",
+          "قيد المتابعة",
+          "مغلقة"
+        ]
+      ]
+    ],
+    "noCreate": true
+  },
+  {
+    "id": "notifications",
+    "title": "الإشعارات",
+    "icon": "bell",
+    "description": "المحتوى والجمهور وجدولة النشر",
+    "fields": [
+      [
+        "title",
+        "عنوان الإشعار",
+        "text"
+      ],
+      [
+        "body",
+        "نص الإشعار",
+        "textarea"
+      ],
+      [
+        "type",
+        "فئة الإشعار",
+        "select",
+        [
+          "تسويق",
+          "طلبات",
+          "حساب"
+        ]
+      ],
+      [
+        "recipient",
+        "الجمهور",
+        "select",
+        [
+          "العميل",
+          "الموصل",
+          "كلاهما"
+        ]
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "destinationType",
+        "عند النقر يفتح",
+        "select",
+        [
+          "صفحة",
+          "صنف",
+          "مجموعة",
+          "عرض مجمّع",
+          "نتائج فلتر",
+          "صفحة الحملة"
+        ]
+      ],
+      [
+        "route",
+        "الصفحة",
+        "select",
+        [
+          "home",
+          "shop",
+          "offers",
+          "catalog",
+          "catalog/new",
+          "favorites",
+          "orders",
+          "account"
+        ]
+      ],
+      [
+        "productIds",
+        "الأصناف المختارة",
+        "products"
+      ],
+      [
+        "groupIds",
+        "المجموعات المختارة",
+        "groups"
+      ],
+      [
+        "bundleId",
+        "العرض المجمع",
+        "bundle"
+      ],
+      [
+        "audience",
+        "فلتر الأصناف",
+        "marketing"
+      ],
+      [
+        "publishAt",
+        "موعد النشر",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "نهاية الظهور",
+        "datetime-local"
+      ],
+      [
+        "priority",
+        "أولوية الظهور",
+        "number"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "جاهز للنشر",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "customers",
+    "title": "العملاء والعناوين",
+    "icon": "user",
+    "description": "بيانات العملاء المرتبطة بالنظام",
+    "fields": [
+      [
+        "title",
+        "اسم العميل",
+        "readonly"
+      ],
+      [
+        "phone",
+        "الهاتف",
+        "readonly"
+      ],
+      [
+        "email",
+        "الإيميل",
+        "readonly"
+      ],
+      [
+        "address",
+        "العنوان",
+        "readonly"
+      ]
+    ],
+    "readonly": true
+  },
+  {
+    "id": "couriers",
+    "title": "التوصيل والمندوبون",
+    "icon": "pin",
+    "description": "التكليف بالتوصيل ومتابعة الحالة",
+    "fields": [
+      [
+        "title",
+        "رقم التوصيل",
+        "readonly"
+      ],
+      [
+        "courier",
+        "معرّف المندوب",
+        "text"
+      ],
+      [
+        "status",
+        "الحالة",
+        "select",
+        [
+          "غير مسند",
+          "مسند",
+          "في الطريق",
+          "تم التسليم"
+        ]
+      ],
+      [
+        "note",
+        "ملاحظة",
+        "textarea"
+      ]
+    ],
+    "noCreate": true
+  },
+  {
+    "id": "users",
+    "title": "المستخدمون والصلاحيات",
+    "icon": "key",
+    "description": "الأدوار المعتمدة من ERPNext — للقراءة فقط",
+    "fields": [
+      [
+        "title",
+        "المستخدم",
+        "readonly"
+      ],
+      [
+        "roles",
+        "الأدوار",
+        "readonly"
+      ],
+      [
+        "status",
+        "الحالة",
+        "readonly"
+      ]
+    ],
+    "readonly": true
+  },
+  {
+    "id": "settings",
+    "title": "إعدادات المتجر والتواصل",
+    "icon": "help",
+    "description": "معلومات المتجر وروابطه وسياساته",
+    "fields": [
+      [
+        "title",
+        "اسم المتجر",
+        "text"
+      ],
+      [
+        "phone",
+        "هاتف التواصل",
+        "tel"
+      ],
+      [
+        "email",
+        "إيميل التواصل",
+        "email"
+      ],
+      [
+        "facebook",
+        "Facebook",
+        "url"
+      ],
+      [
+        "youtube",
+        "YouTube",
+        "url"
+      ],
+      [
+        "instagram",
+        "Instagram",
+        "url"
+      ],
+      [
+        "whatsapp",
+        "WhatsApp",
+        "url"
+      ],
+      [
+        "play",
+        "Google Play",
+        "url"
+      ],
+      [
+        "policy",
+        "سياسة المتجر",
+        "textarea"
+      ]
+    ]
+  },
+  {
+    "id": "coupons",
+    "title": "الكوبونات",
+    "icon": "tag",
+    "description": "شروط الخصم وفترة الصلاحية",
+    "fields": [
+      [
+        "title",
+        "اسم الكوبون",
+        "text"
+      ],
+      [
+        "code",
+        "كود الخصم",
+        "text"
+      ],
+      [
+        "discount",
+        "نسبة الخصم %",
+        "number"
+      ],
+      [
+        "minimum",
+        "الحد الأدنى للطلب",
+        "number"
+      ],
+      [
+        "limit",
+        "حد الاستخدام",
+        "number"
+      ],
+      [
+        "startsAt",
+        "بداية الصلاحية",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "نهاية الصلاحية",
+        "datetime-local"
+      ],
+      [
+        "active",
+        "مفعّل",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "abandoned",
+    "title": "السلال المهملة",
+    "icon": "cart",
+    "description": "السلال المسجلة من الخادم والمتابعة",
+    "fields": [
+      [
+        "title",
+        "السلة",
+        "readonly"
+      ],
+      [
+        "customer",
+        "العميل",
+        "readonly"
+      ],
+      [
+        "total",
+        "الإجمالي",
+        "readonly"
+      ],
+      [
+        "updatedAt",
+        "آخر تحديث",
+        "readonly"
+      ]
+    ],
+    "readonly": true
+  },
+  {
+    "id": "newsletter",
+    "title": "النشرات البريدية",
+    "icon": "chat",
+    "description": "تحضير المحتوى وجدولة النشرات",
+    "fields": [
+      [
+        "title",
+        "عنوان النشرة",
+        "text"
+      ],
+      [
+        "body",
+        "المحتوى",
+        "textarea"
+      ],
+      [
+        "audience",
+        "الجمهور",
+        "select",
+        [
+          "المشتركون الموافقون على الاستلام"
+        ]
+      ],
+      [
+        "publishAt",
+        "موعد النشر",
+        "datetime-local"
+      ],
+      [
+        "active",
+        "جاهز للنشر",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "reports",
+    "title": "التقارير",
+    "icon": "orders",
+    "description": "ملخصات المبيعات والطلبات من الخادم",
+    "fields": [
+      [
+        "title",
+        "اسم التقرير",
+        "readonly"
+      ],
+      [
+        "period",
+        "الفترة",
+        "readonly"
+      ],
+      [
+        "orders",
+        "عدد الطلبات",
+        "readonly"
+      ],
+      [
+        "sales",
+        "المبيعات",
+        "readonly"
+      ],
+      [
+        "returns",
+        "المرتجعات",
+        "readonly"
+      ]
+    ],
+    "readonly": true
+  },
+  {
+    "id": "audit",
+    "title": "سجل العمليات",
+    "icon": "orders",
+    "description": "أحداث الإدارة المسجلة من الخادم",
+    "fields": [
+      [
+        "title",
+        "العملية",
+        "readonly"
+      ],
+      [
+        "actor",
+        "المستخدم",
+        "readonly"
+      ],
+      [
+        "date",
+        "التاريخ",
+        "readonly"
+      ],
+      [
+        "result",
+        "النتيجة",
+        "readonly"
+      ]
+    ],
+    "readonly": true
+  },
+  {
+    "id": "home-texts",
+    "title": "النصوص والعناوين",
+    "description": "عناوين الرئيسية والبحث والتذييل",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "key",
+        "موضع النص",
+        "select",
+        [
+          "home.deals",
+          "home.suggestions",
+          "home.new",
+          "home.best",
+          "home.footer",
+          "header.search"
+        ]
+      ],
+      [
+        "text",
+        "النص المعروض",
+        "textarea"
+      ],
+      [
+        "locale",
+        "اللغة",
+        "select",
+        [
+          "ar",
+          "en"
+        ]
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "home-shortcuts",
+    "title": "الاختصارات العلوية",
+    "description": "صورة واسم ووجهة كل اختصار",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "destination",
+        "المجموعة المستهدفة",
+        "group"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "feature",
+        "الارتباط بخدمة اختيارية",
+        "select",
+        [
+          "",
+          "loyalty",
+          "affiliate"
+        ]
+      ],
+      [
+        "gallery",
+        "صور إضافية للحركة",
+        "gallery"
+      ],
+      [
+        "audience",
+        "الأصناف المستهدفة",
+        "marketing"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "إيقاف الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ]
+    ]
+  },
+  {
+    "id": "home-banners",
+    "title": "البانرات الرئيسية",
+    "description": "صور الحملات وترتيبها ووجهة النقر",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "destination",
+        "وجهة النقر",
+        "route"
+      ],
+      [
+        "seconds",
+        "مدة الظهور بالثواني",
+        "number"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "feature",
+        "الارتباط بخدمة اختيارية",
+        "select",
+        [
+          "",
+          "loyalty",
+          "affiliate"
+        ]
+      ],
+      [
+        "gallery",
+        "صور إضافية للحركة",
+        "gallery"
+      ],
+      [
+        "audience",
+        "الأصناف المستهدفة",
+        "marketing"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "إيقاف الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "useOwnSeconds",
+        "مدة عرض مستقلة لهذه الصورة",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "home-deals",
+    "title": "شريط الصفقات",
+    "description": "إعلانات الصفقات وترتيبها",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "destination",
+        "المجموعة المستهدفة",
+        "group"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "feature",
+        "الارتباط بخدمة اختيارية",
+        "select",
+        [
+          "",
+          "loyalty",
+          "affiliate"
+        ]
+      ],
+      [
+        "gallery",
+        "صور إضافية للحركة",
+        "gallery"
+      ],
+      [
+        "audience",
+        "الأصناف المستهدفة",
+        "marketing"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "إيقاف الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "useOwnSeconds",
+        "مدة عرض مستقلة لهذه الصورة",
+        "checkbox"
+      ],
+      [
+        "seconds",
+        "مدة هذه الصورة بالثواني (2–60)",
+        "number"
+      ]
+    ]
+  },
+  {
+    "id": "home-groups",
+    "title": "أقسام ومجموعات الرئيسية",
+    "description": "كل قسم وبانره ومجموعاته وأصنافه",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "sectionId",
+        "معرّف القسم",
+        "text"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "groupIds",
+        "المجموعات المختارة",
+        "groups"
+      ],
+      [
+        "children",
+        "بطاقات المجموعات والنصوص",
+        "children"
+      ],
+      [
+        "productIds",
+        "الأصناف المختارة",
+        "products"
+      ],
+      [
+        "showMore",
+        "إظهار عرض الكل",
+        "checkbox"
+      ],
+      [
+        "specialText",
+        "النص أسفل بطاقات المجموعات",
+        "text"
+      ],
+      [
+        "showSpecial",
+        "إظهار النص الترويجي أسفل المجموعات",
+        "checkbox"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "feature",
+        "الارتباط بخدمة اختيارية",
+        "select",
+        [
+          "",
+          "loyalty",
+          "affiliate"
+        ]
+      ],
+      [
+        "gallery",
+        "صور إضافية للحركة",
+        "gallery"
+      ],
+      [
+        "audience",
+        "الأصناف المستهدفة",
+        "marketing"
+      ],
+      [
+        "motion",
+        "العرض والحركة",
+        "motion"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "إيقاف الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "useOwnSeconds",
+        "مدة عرض مستقلة لهذه الصورة",
+        "checkbox"
+      ],
+      [
+        "seconds",
+        "مدة هذه الصورة بالثواني (2–60)",
+        "number"
+      ]
+    ]
+  },
+  {
+    "id": "home-suggestions",
+    "title": "مقترحات الهيثم",
+    "description": "بانرات وأصناف المقترحات",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "productIds",
+        "الأصناف المختارة",
+        "products"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "feature",
+        "الارتباط بخدمة اختيارية",
+        "select",
+        [
+          "",
+          "loyalty",
+          "affiliate"
+        ]
+      ],
+      [
+        "gallery",
+        "صور إضافية للحركة",
+        "gallery"
+      ],
+      [
+        "audience",
+        "الأصناف المستهدفة",
+        "marketing"
+      ],
+      [
+        "motion",
+        "العرض والحركة",
+        "motion"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "إيقاف الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "useOwnSeconds",
+        "مدة عرض مستقلة لهذه الصورة",
+        "checkbox"
+      ],
+      [
+        "seconds",
+        "مدة هذه الصورة بالثواني (2–60)",
+        "number"
+      ]
+    ]
+  },
+  {
+    "id": "home-new",
+    "title": "وصل حديثاً في الرئيسية",
+    "description": "عنوان القسم واختيار الأصناف وترتيبها",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "productIds",
+        "الأصناف المختارة",
+        "products"
+      ],
+      [
+        "limit",
+        "عدد الأصناف المعروضة",
+        "number"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "feature",
+        "الارتباط بخدمة اختيارية",
+        "select",
+        [
+          "",
+          "loyalty",
+          "affiliate"
+        ]
+      ],
+      [
+        "gallery",
+        "صور إضافية للحركة",
+        "gallery"
+      ],
+      [
+        "audience",
+        "الأصناف المستهدفة",
+        "marketing"
+      ],
+      [
+        "motion",
+        "العرض والحركة",
+        "motion"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "إيقاف الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ]
+    ]
+  },
+  {
+    "id": "home-best",
+    "title": "الأكثر مبيعاً",
+    "description": "اختيار يدوي أو ترتيب المبيعات من النظام",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "mode",
+        "مصدر الترتيب",
+        "select",
+        [
+          "manual",
+          "sales"
+        ]
+      ],
+      [
+        "productIds",
+        "الأصناف المختارة",
+        "products"
+      ],
+      [
+        "limit",
+        "عدد الأصناف",
+        "number"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "feature",
+        "الارتباط بخدمة اختيارية",
+        "select",
+        [
+          "",
+          "loyalty",
+          "affiliate"
+        ]
+      ],
+      [
+        "gallery",
+        "صور إضافية للحركة",
+        "gallery"
+      ],
+      [
+        "audience",
+        "الأصناف المستهدفة",
+        "marketing"
+      ],
+      [
+        "motion",
+        "العرض والحركة",
+        "motion"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "إيقاف الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ]
+    ]
+  },
+  {
+    "id": "home-footer",
+    "title": "التذييل والتواصل",
+    "description": "نص التذييل وصورته وروابط التواصل",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "text",
+        "النص",
+        "textarea"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "facebook",
+        "Facebook",
+        "url"
+      ],
+      [
+        "youtube",
+        "YouTube",
+        "url"
+      ],
+      [
+        "instagram",
+        "Instagram",
+        "url"
+      ],
+      [
+        "whatsapp",
+        "WhatsApp",
+        "url"
+      ],
+      [
+        "play",
+        "Google Play",
+        "url"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "feature",
+        "الارتباط بخدمة اختيارية",
+        "select",
+        [
+          "",
+          "loyalty",
+          "affiliate"
+        ]
+      ],
+      [
+        "gallery",
+        "صور إضافية للحركة",
+        "gallery"
+      ],
+      [
+        "audience",
+        "الأصناف المستهدفة",
+        "marketing"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "إيقاف الظهور (بتوقيت الجهاز)",
+        "datetime-local"
+      ]
+    ]
+  },
+  {
+    "id": "shop-banners",
+    "title": "بانرات مجموعات التسوق",
+    "description": "صورة البانر وعنوانه ووجهة النقر لكل مجموعة",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "groupId",
+        "المجموعة",
+        "group"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "destination",
+        "المجموعة المستهدفة",
+        "group"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "gallery",
+        "صور البانر ووجهاتها",
+        "gallery"
+      ],
+      [
+        "audience",
+        "الأصناف المستهدفة",
+        "marketing"
+      ],
+      [
+        "motion",
+        "الحركة والتوقيت",
+        "motion"
+      ],
+      [
+        "seconds",
+        "مدة الصورة الرئيسية",
+        "number"
+      ],
+      [
+        "useOwnSeconds",
+        "مدة مستقلة للصورة الرئيسية",
+        "checkbox"
+      ],
+      [
+        "startsAt",
+        "بدء الظهور",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "نهاية الظهور",
+        "datetime-local"
+      ]
+    ]
+  },
+  {
+    "id": "shop-new",
+    "title": "وصل حديثاً لكل مجموعة",
+    "description": "اختيار تلقائي أو يدوي مع تضمين واستبعاد الأصناف",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "groupId",
+        "المجموعة",
+        "group"
+      ],
+      [
+        "mode",
+        "طريقة الاختيار",
+        "select",
+        [
+          "automatic",
+          "manual"
+        ]
+      ],
+      [
+        "productIds",
+        "الأصناف المختارة",
+        "products"
+      ],
+      [
+        "excludedIds",
+        "الأصناف المستبعدة",
+        "products"
+      ],
+      [
+        "limit",
+        "الحد الأقصى للعرض",
+        "number"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "shop-layout",
+    "title": "ترتيب وعرض التسوق",
+    "description": "عناوين وأيقونات المجموعات وطريقة العرض بالسحب والترقيم",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "groupId",
+        "المجموعة",
+        "group"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "layout",
+        "عرض الأصناف",
+        "select",
+        [
+          "شبكة",
+          "قائمة"
+        ]
+      ],
+      [
+        "columns",
+        "الأعمدة على الهاتف",
+        "select",
+        [
+          "2",
+          "3"
+        ]
+      ],
+      [
+        "fontFamily",
+        "خط اسم المجموعة",
+        "select",
+        [
+          "system",
+          "cairo",
+          "tajawal",
+          "noto"
+        ]
+      ],
+      [
+        "fontSize",
+        "حجم اسم المجموعة (بكسل)",
+        "number"
+      ],
+      [
+        "fontWeight",
+        "سُمك الخط",
+        "select",
+        [
+          "400",
+          "500",
+          "600",
+          "700",
+          "800"
+        ]
+      ],
+      [
+        "iconShape",
+        "شكل أيقونة المجموعة",
+        "select",
+        [
+          "circle",
+          "rounded",
+          "square",
+          "outline",
+          "pill"
+        ]
+      ],
+      [
+        "iconSize",
+        "حجم الأيقونة (بكسل)",
+        "number"
+      ],
+      [
+        "iconFrame",
+        "إطار الأيقونة",
+        "select",
+        [
+          "royal",
+          "gold",
+          "none"
+        ]
+      ],
+      [
+        "showNew",
+        "إظهار شارة وصل حديثاً",
+        "checkbox"
+      ],
+      [
+        "showReels",
+        "إظهار شارة الريلز",
+        "checkbox"
+      ],
+      [
+        "shortcutEnabled",
+        "إظهار اختصار المجموعة في الرئيسية",
+        "checkbox"
+      ],
+      [
+        "shortcutPosition",
+        "ترتيب الاختصار في الرئيسية",
+        "number"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "offer-bundles",
+    "title": "العروض المجمعة وتسعيرها",
+    "description": "إجمالي العرض ومكوناته والتوزيع المرن للسعر",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "sourceType",
+        "مصدر العرض",
+        "select",
+        [
+          "Product Bundle",
+          "Promotional Scheme"
+        ]
+      ],
+      [
+        "sourceId",
+        "معرّف المستند في ERPNext",
+        "text"
+      ],
+      [
+        "parentItem",
+        "الصنف الأب غير المخزني",
+        "item"
+      ],
+      [
+        "parentName",
+        "اسم الصنف كما في النظام",
+        "text"
+      ],
+      [
+        "parentQty",
+        "كمية صنف العرض عند الإضافة",
+        "number"
+      ],
+      [
+        "parentRate",
+        "سعر وحدة صنف العرض",
+        "number"
+      ],
+      [
+        "useParentValues",
+        "إنزال اسم وكمية وسعر الصنف كما هي",
+        "checkbox"
+      ],
+      [
+        "total",
+        "إجمالي سعر العرض للوحدة",
+        "number"
+      ],
+      [
+        "allocation",
+        "أصناف الحزمة وتوزيع السعر",
+        "allocation"
+      ],
+      [
+        "startsAt",
+        "بداية العرض",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "نهاية العرض",
+        "datetime-local"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ],
+      [
+        "gallery",
+        "صور العرض الإضافية ووجهاتها",
+        "gallery"
+      ],
+      [
+        "seconds",
+        "مدة صورة العرض الرئيسية (ثانية)",
+        "number"
+      ],
+      [
+        "useOwnSeconds",
+        "مدة مستقلة لصورة العرض الرئيسية",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "offers-layout",
+    "title": "واجهة العروض",
+    "description": "العنوان والترتيب والصور وإظهار الإجماليات",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "text",
+        "وصف القسم",
+        "textarea"
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "showTotal",
+        "إظهار إجمالي العرض",
+        "checkbox"
+      ],
+      [
+        "showSavings",
+        "إظهار قيمة التوفير",
+        "checkbox"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "account-layout",
+    "title": "قائمة حسابي",
+    "description": "النصوص والأيقونات وترتيب خدمات الحساب",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "service",
+        "الخدمة",
+        "select",
+        [
+          "profile",
+          "wallet",
+          "orders",
+          "returns",
+          "loyalty",
+          "affiliate",
+          "messages",
+          "favorites",
+          "addresses",
+          "language",
+          "help"
+        ]
+      ],
+      [
+        "image",
+        "الصورة",
+        "image"
+      ],
+      [
+        "text",
+        "النص التوضيحي",
+        "textarea"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "orders-layout",
+    "title": "واجهة الطلبات والتتبع",
+    "description": "عناوين وحالات رحلة الطلب والتواصل",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "text",
+        "النص التوضيحي",
+        "textarea"
+      ],
+      [
+        "stage",
+        "مرحلة الطلب",
+        "select",
+        [
+          "تم الاستلام",
+          "قيد التجهيز",
+          "في الطريق",
+          "تم التسليم"
+        ]
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "appearance",
+    "title": "مظهر التطبيق",
+    "description": "ألوان وإطارات الأيقونات والقوالب واللمعان",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "palette",
+        "مجموعة الألوان",
+        "palette"
+      ],
+      [
+        "frames",
+        "تطبيق الإطارات الملونة على الأيقونات والقوالب",
+        "checkbox"
+      ],
+      [
+        "dataFrames",
+        "إطارات بيانات الأصناف وبطاقات المجموعات",
+        "checkbox"
+      ],
+      [
+        "bannerFrames",
+        "إطارات البانرات والصور الإعلانية",
+        "checkbox"
+      ],
+      [
+        "shine",
+        "تفعيل اللمعان",
+        "checkbox"
+      ],
+      [
+        "productOfferText",
+        "نص شارة عرض الصنف",
+        "text"
+      ],
+      [
+        "showProductOffer",
+        "إظهار شارة عرض الصنف",
+        "checkbox"
+      ],
+      [
+        "floatingCartMovable",
+        "السماح بسحب زر السلة العائم",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "app-navigation",
+    "title": "الشريط والهوية العامة",
+    "description": "عناوين أقسام التطبيق وترتيبها وظهورها",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "route",
+        "القسم",
+        "select",
+        [
+          "home",
+          "shop",
+          "offers",
+          "orders",
+          "account"
+        ]
+      ],
+      [
+        "text",
+        "العنوان المعروض",
+        "text"
+      ],
+      [
+        "activeStyle",
+        "تمييز القسم المختار",
+        "select",
+        [
+          "أسود وذهبي وعنابي لامع"
+        ]
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "active",
+        "ظاهر في التطبيق",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "delivery-board",
+    "title": "دورة التوصيل",
+    "description": "إدارة دورة الطلب في المعاينة المحلية",
+    "fields": [],
+    "readonly": true
+  },
+  {
+    "id": "notification-settings",
+    "title": "إعدادات الإشعارات",
+    "description": "فئات الإشعارات والتسويق والتفضيلات",
+    "noCreate": true,
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "orders",
+        "إشعارات الطلبات والتوصيل",
+        "checkbox"
+      ],
+      [
+        "account",
+        "إشعارات الحساب والرسائل والمسودات",
+        "checkbox"
+      ],
+      [
+        "marketing",
+        "الإشعارات التسويقية",
+        "checkbox"
+      ],
+      [
+        "maxMarketing",
+        "أقصى حملات تسويقية ظاهرة في المركز",
+        "number"
+      ],
+      [
+        "retentionDays",
+        "مدة الاحتفاظ بالأحداث بالأيام",
+        "number"
+      ]
+    ]
+  },
+  {
+    "id": "feature-policies",
+    "title": "إتاحة الولاء والعمولة",
+    "description": "الظهور والتفعيل لكل العملاء أو عملاء محددين وفي فترة محددة",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "feature",
+        "الخدمة",
+        "select",
+        [
+          "loyalty",
+          "affiliate"
+        ]
+      ],
+      [
+        "scope",
+        "نطاق العملاء",
+        "select",
+        [
+          "الجميع",
+          "عملاء محددون",
+          "الجميع عدا المحددين"
+        ]
+      ],
+      [
+        "customerIds",
+        "العملاء",
+        "customers"
+      ],
+      [
+        "visible",
+        "إظهار الميزة",
+        "checkbox"
+      ],
+      [
+        "enabled",
+        "السماح باستخدام الميزة",
+        "checkbox"
+      ],
+      [
+        "priority",
+        "الأولوية من 0 إلى 100",
+        "number"
+      ],
+      [
+        "startsAt",
+        "بداية الفترة",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "نهاية الفترة",
+        "datetime-local"
+      ],
+      [
+        "active",
+        "تطبيق القاعدة",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "marketing-automation",
+    "title": "الأتمتة التسويقية",
+    "description": "مصادر الأصناف والنصوص والعملاء والقنوات وجدولة النشر",
+    "fields": [
+      [
+        "title",
+        "العنوان",
+        "text"
+      ],
+      [
+        "automation",
+        "قاعدة النشر",
+        "automation"
+      ],
+      [
+        "startsAt",
+        "بدء السماح بالنشر",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "نهاية السماح بالنشر",
+        "datetime-local"
+      ],
+      [
+        "active",
+        "تفعيل القاعدة",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "automation-log",
+    "title": "سجل الأتمتة والنشرات",
+    "description": "معاينة النتائج وتشغيل القواعد ومراجعة النشرات",
+    "readonly": true,
+    "fields": []
+  },
+  {
+    "id": "customer-links",
+    "title": "ربط المستخدمين بالعملاء",
+    "description": "ربط هوية الدخول بالعميل والشركة دون منح أدوار",
+    "fields": [
+      [
+        "title",
+        "وصف الربط",
+        "text"
+      ],
+      [
+        "user",
+        "مستخدم Frappe",
+        "erp-link",
+        "User"
+      ],
+      [
+        "customer",
+        "العميل",
+        "erp-link",
+        "Customer"
+      ],
+      [
+        "company",
+        "الشركة",
+        "erp-link",
+        "Company"
+      ],
+      [
+        "active",
+        "الربط مفعّل",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "erp-connection",
+    "title": "الربط مع ERPNext",
+    "description": "الشركات وقوائم الأسعار والمخازن وخدمات الربط",
+    "readonly": true,
+    "fields": []
+  },
+  {
+    "id": "store-publication",
+    "title": "النشر والجدولة",
+    "description": "مسودة ومعاينة ونشر واستعادة المحتوى",
+    "readonly": true,
+    "fields": []
+  },
+  {
+    "id": "setup-doctor",
+    "title": "فحص الإعداد والنقل",
+    "description": "فحص بنية الخادم والصيانة وهوية المتجر",
+    "readonly": true,
+    "fields": []
+  },
+  {
+    "id": "customer-provision",
+    "title": "إنشاء حساب عميل",
+    "description": "حساب منفصل لكل عميل دون مفاتيح مشتركة",
+    "readonly": true,
+    "fields": []
+  },
+  {
+    "id": "setup-guide",
+    "title": "دليل الإعداد والمساعدة",
+    "description": "شرح كل المتطلبات والحقول وخطوات النقل",
+    "readonly": true,
+    "fields": []
+  },
+  {
+    "id": "videos",
+    "title": "الريلز ومصادر الفيديو",
+    "icon": "video",
+    "description": "اكتشاف الفيديو والنشر والتحكم",
+    "fields": [
+      [
+        "title",
+        "عنوان الفيديو",
+        "text"
+      ],
+      [
+        "source",
+        "المصدر",
+        "select",
+        [
+          "description",
+          "attachment",
+          "external",
+          "hosted"
+        ]
+      ],
+      [
+        "url",
+        "رابط الفيديو العام",
+        "text"
+      ],
+      [
+        "mediaId",
+        "معرّف الفيديو المرفوع",
+        "text"
+      ],
+      [
+        "productIds",
+        "الأصناف المرتبطة",
+        "products"
+      ],
+      [
+        "groupNames",
+        "أسماء المجموعات",
+        "customers"
+      ],
+      [
+        "image",
+        "الغلاف",
+        "image"
+      ],
+      [
+        "position",
+        "الترتيب",
+        "number"
+      ],
+      [
+        "modified",
+        "وقت الإضافة",
+        "text"
+      ],
+      [
+        "startsAt",
+        "بداية العرض",
+        "datetime-local"
+      ],
+      [
+        "endsAt",
+        "نهاية العرض",
+        "datetime-local"
+      ],
+      [
+        "active",
+        "ظاهر للعملاء",
+        "checkbox"
+      ]
+    ]
+  },
+  {
+    "id": "reels-settings",
+    "title": "إعدادات الريلز والحلقات",
+    "icon": "video",
+    "description": "الاختصار والحلقات والمصادر والتشغيل",
+    "fields": [
+      [
+        "title",
+        "الاسم",
+        "text"
+      ],
+      [
+        "enabled",
+        "تفعيل الريلز",
+        "checkbox"
+      ],
+      [
+        "shortcut",
+        "الاختصار العائم في الرئيسية",
+        "checkbox"
+      ],
+      [
+        "shortcutDesign",
+        "نموذج اختصار الريلز",
+        "select",
+        [
+          "شفاف بإطار لامع",
+          "الشريط الأحمر الكلاسيكي"
+        ]
+      ],
+      [
+        "shortcutTitle",
+        "نص الاختصار",
+        "text"
+      ],
+      [
+        "latestCount",
+        "عدد الأحدث في الاختصار",
+        "number"
+      ],
+      [
+        "autoPlay",
+        "تشغيل تلقائي مكتوم",
+        "checkbox"
+      ],
+      [
+        "dataSaver",
+        "توفير البيانات افتراضياً",
+        "checkbox"
+      ],
+      [
+        "rings",
+        "حلقات الفيديو حول الأصناف والمجموعات",
+        "checkbox"
+      ],
+      [
+        "ringStyle",
+        "ألوان الحلقات",
+        "select",
+        [
+          "brand",
+          "social",
+          "green"
+        ]
+      ],
+      [
+        "autoDiscover",
+        "نشر الفيديوهات العامة المكتشفة تلقائياً",
+        "checkbox"
+      ],
+      [
+        "description",
+        "الجلب من وصف الصنف",
+        "checkbox"
+      ],
+      [
+        "attachments",
+        "الجلب من مرفقات الصنف",
+        "checkbox"
+      ],
+      [
+        "sourceOrder",
+        "أولوية المصادر",
+        "text"
+      ],
+      [
+        "limit",
+        "حد الفيديوهات في النافذة",
+        "number"
+      ],
+      [
+        "active",
+        "تطبيق الإعدادات",
+        "checkbox"
+      ],
+      [
+        "shortcutPalette",
+        "ألوان الاختصار",
+        "select",
+        [
+          "أسود وذهبي",
+          "هوية المتجر",
+          "زمردي وذهبي",
+          "كحلي وفضي",
+          "عنابي وذهبي"
+        ]
+      ],
+      [
+        "shortcutOpacity",
+        "عتامة خلفية الاختصار (0–85)",
+        "number"
+      ],
+      [
+        "shortcutMovable",
+        "السماح بتحريك الاختصار",
+        "checkbox"
+      ],
+      [
+        "shortcutShine",
+        "لمعان إطار الاختصار",
+        "checkbox"
+      ],
+      [
+        "enableShare",
+        "مشاركة الريلز",
+        "checkbox"
+      ],
+      [
+        "enableLikes",
+        "الإعجاب وحفظ الصنف في المفضلة",
+        "checkbox"
+      ],
+      [
+        "enableComments",
+        "تعليقات الريلز",
+        "checkbox"
+      ],
+      [
+        "enableCart",
+        "الإضافة إلى السلة من الريلز",
+        "checkbox"
+      ]
+    ],
+    "noCreate": true
+  }
+]

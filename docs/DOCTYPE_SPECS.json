@@ -1,0 +1,208 @@
+{
+  "HEC Bridge Settings": [
+    {
+      "fieldname": "data",
+      "label": "Data",
+      "fieldtype": "Long Text"
+    },
+    {
+      "fieldname": "revision",
+      "label": "Revision",
+      "fieldtype": "Int",
+      "default": "1"
+    }
+  ],
+  "HEC Content": [
+    {
+      "fieldname": "data",
+      "label": "Data",
+      "fieldtype": "Long Text"
+    },
+    {
+      "fieldname": "revision",
+      "label": "Revision",
+      "fieldtype": "Int",
+      "default": "1"
+    }
+  ],
+  "HEC Customer Link": [
+    {
+      "fieldname": "user",
+      "label": "User",
+      "fieldtype": "Link",
+      "options": "User",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "customer",
+      "label": "Customer",
+      "fieldtype": "Link",
+      "options": "Customer",
+      "reqd": 1
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "enabled",
+      "label": "Enabled",
+      "fieldtype": "Check",
+      "default": "1"
+    }
+  ],
+  "HEC Order Request": [
+    {
+      "fieldname": "user",
+      "label": "User",
+      "fieldtype": "Link",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fieldname": "request_hash",
+      "label": "Request Hash",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "sales_order",
+      "label": "Sales Order",
+      "fieldtype": "Link",
+      "options": "Sales Order"
+    }
+  ],
+  "HEC Publication": [
+    {
+      "fieldname": "title",
+      "label": "Title",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "snapshot",
+      "label": "Snapshot",
+      "fieldtype": "Long Text"
+    },
+    {
+      "fieldname": "checksum",
+      "label": "Checksum",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "state",
+      "label": "State",
+      "fieldtype": "Select",
+      "options": "Pending\nScheduled\nPublished\nSuperseded\nCancelled"
+    },
+    {
+      "fieldname": "created_by",
+      "label": "Created By",
+      "fieldtype": "Link",
+      "options": "User"
+    },
+    {
+      "fieldname": "scheduled_at",
+      "label": "Scheduled At",
+      "fieldtype": "Datetime"
+    },
+    {
+      "fieldname": "published_at",
+      "label": "Published At",
+      "fieldtype": "Datetime"
+    }
+  ],
+  "HEC Store Channel": [
+    {
+      "fieldname": "store_id",
+      "label": "Store Id",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "publication",
+      "label": "Publication",
+      "fieldtype": "Link",
+      "options": "HEC Publication"
+    },
+    {
+      "fieldname": "revision",
+      "label": "Revision",
+      "fieldtype": "Int",
+      "default": "1"
+    },
+    {
+      "fieldname": "maintenance",
+      "label": "Maintenance",
+      "fieldtype": "Check",
+      "default": "0"
+    }
+  ],
+  "HEC Inbox": [
+    {
+      "fieldname": "user",
+      "label": "User",
+      "fieldtype": "Link",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fieldname": "title",
+      "label": "Title",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "message",
+      "label": "Message",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "sales_order",
+      "label": "Sales Order",
+      "fieldtype": "Link",
+      "options": "Sales Order"
+    },
+    {
+      "fieldname": "read_at",
+      "label": "Read At",
+      "fieldtype": "Datetime"
+    },
+    {
+      "fieldname": "created_at",
+      "label": "Created At",
+      "fieldtype": "Datetime"
+    }
+  ],
+  "HEC Audit Event": [
+    {
+      "fieldname": "actor",
+      "label": "Actor",
+      "fieldtype": "Link",
+      "options": "User"
+    },
+    {
+      "fieldname": "action",
+      "label": "Action",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "target",
+      "label": "Target",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "revision",
+      "label": "Revision",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "occurred_at",
+      "label": "Occurred At",
+      "fieldtype": "Datetime"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+PASS Scheduled and expired campaigns stay out of inbox; audiences stay scoped
+PASS Click opens product immediately and persists read state
+PASS Failed read-state write does not navigate or lose preferences
+PASS Deletion hides notification without deleting order events
+PASS Mark all read is idempotent and scoped by recipient
+PASS Marketing preferences preserve order updates
+PASS Unsafe route never becomes navigation target
+7 notification checks passed

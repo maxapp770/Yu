@@ -1,0 +1,9 @@
+PASS Requested admin/123456 opens six organized sections
+PASS All 22 former tools and 17 new tabs load within their sections
+PASS Content edits update the app and survive restart
+PASS Per-group new arrivals manual selection changes the actual catalog
+PASS Original category children remain valid and renamed groups update shopping
+PASS Mixed bundle allocations save exact total and update the actual cart
+PASS Separate recipient imports and merges quantities with current prices
+PASS Logout blocks direct routes and old admin data
+PASS Customer screens fit mobile widths with transparent navigation

@@ -1,0 +1,17 @@
+HEC+ 1.7.0-phase1 / versionCode 8
+Application: com.alhaitham.hec.preview
+Minimum API 29; target/compile API 35; Java 17; build-apk.sh
+APK SHA256: 785576c21bb40de73701a61d032bc1dc3d49473579898881ba8da576c2ba1521
+Signer SHA256: 834fe0788fce00dcfa72bd5e2aa28b02e384d479412ef0e0199522aa7ead1592
+Web assets: byte-for-byte matched with final APK
+Review admin: admin / 123456; local review only; not ERP authorization
+Marketing: all nine existing homepage blocks, editable text, filters, preview, scheduling
+Galleries: up to 12 extra images; order, destination, duration and effect per image
+Golden offers: canonical parent bundle retained while images cycle
+Motion: rtl/ltr, slide/fade/zoom/flip/none, pause, loop, dots and arrows
+Media: local IndexedDB; PNG/JPG 5 MiB each, 16 MP, total 40 MiB/80 images
+New checks: marketing engine 12; marketing browser 12; galleries browser 6
+Regression: customer 82; commerce 13; management authorization 18; package security 8
+Browser viewport checks: 320/360/412 CSS px; zero page errors
+Android full runtime, camera hardware and native file chooser: NOT VERIFIED
+ERPNext: disconnected; no real sales order, invoice, payment or shared config publishing

@@ -1,0 +1,25 @@
+test_customer_has_no_admin_access (__main__.Tests.test_customer_has_no_admin_access) ... ok
+test_customer_password_change_revokes_other_sessions (__main__.Tests.test_customer_password_change_revokes_other_sessions) ... ok
+test_draft_publish_and_restore (__main__.Tests.test_draft_publish_and_restore) ... ok
+test_http_transport_and_cors (__main__.Tests.test_http_transport_and_cors) ... ok
+test_integration_user_cannot_login_as_admin (__main__.Tests.test_integration_user_cannot_login_as_admin) ... ok
+test_maintenance_fences_orders (__main__.Tests.test_maintenance_fences_orders) ... ok
+test_no_offline_permission_bypass (__main__.Tests.test_no_offline_permission_bypass) ... ok
+test_no_report_cache_cross_user (__main__.Tests.test_no_report_cache_cross_user) ... ok
+test_order_and_inbox_customer_ownership (__main__.Tests.test_order_and_inbox_customer_ownership) ... ok
+test_order_and_same_id_retry (__main__.Tests.test_order_and_same_id_retry) ... ok
+test_order_rejects_prices_and_customer_injection (__main__.Tests.test_order_rejects_prices_and_customer_injection) ... ok
+test_origin_change_disables_customer_mapping (__main__.Tests.test_origin_change_disables_customer_mapping) ... ok
+test_origin_validation (__main__.Tests.test_origin_validation) ... ok
+test_report_exports_check_permission_and_formula_safety (__main__.Tests.test_report_exports_check_permission_and_formula_safety) ... ok
+test_report_rejects_impersonation_filters (__main__.Tests.test_report_rejects_impersonation_filters) ... ok
+test_report_uses_requesting_user_not_service (__main__.Tests.test_report_uses_requesting_user_not_service) ... ok
+test_revoked_role_blocks_next_action (__main__.Tests.test_revoked_role_blocks_next_action) ... ok
+test_rotation_requires_test_and_maintenance_and_reauth (__main__.Tests.test_rotation_requires_test_and_maintenance_and_reauth) ... ok
+test_secrets_encrypted_on_disk (__main__.Tests.test_secrets_encrypted_on_disk) ... ok
+test_uncertain_reply_never_blindly_retried (__main__.Tests.test_uncertain_reply_never_blindly_retried) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.611s
+
+OK

@@ -1,0 +1,19 @@
+PASS Review adapter is isolated from the future ERP guard
+PASS Disabled adapter never contacts ERP or exposes dashboard modules
+PASS Only the exact server-authenticated System Manager role is accepted
+PASS Local storage and client role hints cannot grant access
+PASS Trusted role exposes six organized administration sections
+PASS Every management action is denied before authentication
+PASS Expiry removes data and entry without a navigation
+PASS Backgrounding revokes the role and closes open management forms
+PASS 403 during loading clears confidential data and access
+PASS Server failure shows retry; no invented records
+PASS Late responses after revocation cannot restore a role or records
+PASS Server record and user markup is escaped
+PASS Read-only user role fields cannot be submitted or archived
+PASS Duplicate submits produce a single write
+PASS Readonly balances and caller-supplied versions are stripped
+PASS Conflict does not show success or overwrite the server copy
+PASS 401 during save immediately revokes access
+PASS Invalid dates, discounts, prices and unauthorized links do not write
+18 management authorization checks passed

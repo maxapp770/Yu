@@ -1,0 +1,21 @@
+HEC 2.4.0 / versionCode 16 / Android 10+
+{
+  "customer": {
+    "version": "2.4.0",
+    "versionCode": 16,
+    "sha256": "5f2c5f4b7375f0e54b577bfb6fd78ee6fed2d42d23a078a2eb726dc4199c200d",
+    "bytes": 2105984,
+    "signature_verified": true,
+    "admin_assets_separated": true
+  },
+  "admin": {
+    "version": "2.4.0",
+    "versionCode": 16,
+    "sha256": "c07b73c57bba2502982989b173463fb70e517a0d1b67d6c73a739f3cc9099595",
+    "bytes": 7125605,
+    "signature_verified": true,
+    "admin_assets_separated": true
+  }
+}
+Preview signing certificate retained. No Android device launch. Live ERP connection not established. Native endpoint requires independent HTTPS deployment.
+Site source commit: 61a7f17860dad6fdc71422e1aed3f8b7e31c5eb2

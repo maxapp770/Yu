@@ -1,0 +1,10 @@
+PASS 40 tabs load existing content automatically without pressing load
+PASS Existing groups can be opened, edited and saved
+PASS Saved barcode mapping resolves the same product from home search
+PASS Search preserves selected items and accepts validated transport results through an isolated fixture
+PASS Golden offer creates one non-stock parent with exact name, quantity, rate and visible components
+PASS Order persists separate Items and Packed Items without charging components twice
+PASS Palette, colored frames and reduced shine save across restart
+PASS Home barcode control opens scanner with a working manual fallback
+PASS Compact equal cards and transparent shop navigation fit 320/360/412 widths
+PASS Upgrade retains existing 1.4 bundle prices and saved content

@@ -1,0 +1,8 @@
+PASS Product cards shrink over 10% on 320/360/412 screens without horizontal overflow
+PASS Existing home cards expose editable text, section defaults and per-card show/hide overrides
+PASS Copy and visibility persist; custom promotional text is escaped as text
+PASS Independent banner/data frames and product badge settings save and follow the palette
+PASS Dragging does not open the cart; its position survives quantity changes, navigation and restart
+PASS Real touch events move the cart and rotation keeps it within the visible screen
+PASS Keyboard movement, position reset and normal tap-to-open remain usable
+PASS Movement can be disabled; the cart border and fill use the active application palette

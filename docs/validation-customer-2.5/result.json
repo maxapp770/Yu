@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Customer boots with current assets and no admin dashboard or local admin account",
+    "Six packaged reels, glass shortcut, responsive sizing and saved preferences survive restart",
+    "Group image opens shopping; only its play badge opens reels",
+    "An actual packaged video plays on the Android asset origin without service access",
+    "Reels cart adds to the actual local basket; share invokes the native reel action",
+    "Product rating saves locally; product sharing and explicit favourite removal work",
+    "Native barcode callback selects the matching item",
+    "Floating basket remains movable with stored position",
+    "Shared basket has a review/import step and adds its items to the recipient basket",
+    "Courier connection entry remains available",
+    "Home, shopping, offers, catalogue, favourites, account and notifications fit 320/390/760px; large navigation and scroll helpers",
+    "Connected fixture: account login, reel like and matching favourite, comment creation and deletion use service operations"
+  ],
+  "errors": [],
+  "failed": [],
+  "fixtureOnly": true,
+  "nativeIntents": "captured in browser; no physical Android device"
+}

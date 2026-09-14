@@ -1,0 +1,1 @@
+PASS Android assets: local login, two photos, primary selection, native PNG save request, native image/text share, multi-image share request, saved design reload, exact banner target preserving navigation and motion, persisted photos, 320/390/760px layout. Native chooser execution still requires an Android device.

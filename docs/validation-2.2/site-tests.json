@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "Integration identity cannot sign in as admin",
+    "Sessions are bound to the authenticated ChatGPT visitor",
+    "Settings validate permitted ERP selections and reject stale writes",
+    "Customer mapping and admin isolation",
+    "Draft remains private until publication and propagates to customer configuration",
+    "Reports use personal ERP credentials, reject impersonation and segregate cache",
+    "CSV checks export permission and neutralizes formula injection",
+    "Prices are calculated by ERP and same request creates one draft",
+    "Uncertain ERP response is reconciled without duplicate writes",
+    "Orders and notifications enforce customer ownership",
+    "Revoked administrative role blocks the next operation",
+    "Origin change revokes sessions, disables old customer mappings and encrypts credentials"
+  ],
+  "backend": "real SQLite and WebCrypto, simulated Frappe HTTP; no remote ERP writes"
+}

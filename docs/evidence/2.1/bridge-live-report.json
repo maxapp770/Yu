@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-12T02:33:31.854710+00:00",
+  "server": "https://erptest.wahatalhaitham.com",
+  "mode": "read-only",
+  "steps": [
+    {
+      "step": "bootstrap",
+      "passed": false,
+      "reason": "HTTP 417"
+    }
+  ],
+  "passed": false,
+  "blocked_reason": "HTTP 417"
+}

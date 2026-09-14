@@ -1,0 +1,8 @@
+PASS Every packaged catalog and campaign image exists
+PASS No duplicate catalog IDs or dangling campaign product references
+PASS All entrypoint scripts and styles are bundled, with restrictive CSP
+PASS Android does not request network or dangerous permissions and disables backups
+PASS WebView keeps bridge, file access, mixed content and debug disabled
+PASS New resources are explicit in the native resource allowlist
+PASS APK and Gradle version and signing configuration agree
+7 package and security checks passed

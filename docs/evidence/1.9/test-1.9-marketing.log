@@ -1,0 +1,13 @@
+PASS Exact Arabic price matches only displayed 500 items and excludes hidden
+PASS Inclusive range and all conditions combine correctly
+PASS Any condition joins different marketing ideas
+PASS Manual inclusions and exclusions have explicit precedence
+PASS Manual-only mode never leaks unmatched rows
+PASS Sorting and limits are deterministic
+PASS Daily ordering stays stable within a day
+PASS Invalid operators and inverted ranges fail closed
+PASS Empty and malformed numeric rules cannot become zero
+PASS Name search and category exclusion work
+PASS Scheduled visibility uses inclusive start and exclusive end
+PASS Non-numeric and excessive motion settings are bounded
+12 marketing checks passed

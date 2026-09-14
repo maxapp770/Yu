@@ -1,0 +1,6 @@
+PASS Golden offers cycle with gallery-specific duration, effect, filter and product destination
+PASS Per-image marketing destination resolves its own saved filter
+PASS Image reordering and removal preserve independent destination data
+PASS All eight other homepage blocks accept multiple images with independent click destinations
+PASS Right-to-left movement uses correct physical scroll direction
+PASS Galleries, order and destinations survive app restart

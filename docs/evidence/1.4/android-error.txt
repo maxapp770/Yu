@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/63c17c50a6b0/tooling/native-final14.py", line 33, in <module>
+    run(['shell','pm','install','-r','/data/local/tmp/hec.apk'],180)
+  File "/workspace/scratch/63c17c50a6b0/tooling/native-final14.py", line 14, in run
+    print('ADB',args[:4],flush=True);r=subprocess.run([adb,*args],capture_output=True,env=env,timeout=timeout);results.append({'args':args,'code':r.returncode,'out':r.stdout.decode(errors='replace')[-9000:],'err':r.stderr.decode(errors='replace')[-2000:]});(out/'commands.json').write_text(json.dumps(results,ensure_ascii=False,indent=2));return r
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['/workspace/scratch/63c17c50a6b0/tooling/sdk/platform-tools/adb', 'shell', 'pm', 'install', '-r', '/data/local/tmp/hec.apk']' timed out after 180 seconds

@@ -1,0 +1,10 @@
+PASS Home shortcut grid
+PASS Automatic carousel advances and pauses
+PASS Drawer applies range, shows validation and clears
+PASS Profile save updates account header
+PASS Message draft survives restart and private preview gates access
+PASS English locale and LTR layout
+PASS Adapter rejection recovers through actual retry button
+PASS Broken image uses packaged fallback
+PASS No horizontal document overflow on 320/360/412 px
+9 browser journey checks passed

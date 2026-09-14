@@ -1,0 +1,12 @@
+PASS All nine home blocks and the existing deal title render without overflow
+PASS The deal title, subtitle, motion and timing are editable from the existing home layout
+PASS A 500-price image opens only matching current products with identical preview/results
+PASS Multiple rules and the empty campaign state are honest and actionable
+PASS Manual inclusions and exclusions work with the searchable item picker
+PASS An uploaded design and multiple gallery images survive save and restart in IndexedDB
+PASS Scheduling hides future images and also blocks direct links outside the campaign window
+PASS Autoplay advances at the configured interval and the pause control stops it
+PASS Reduced-motion preference stops automatic movement while manual navigation still works
+PASS Static grid, column count and section order save without mobile horizontal overflow
+PASS Incomplete price filters are rejected before saving
+PASS Upgrade retains earlier custom text and adds marketing controls to existing sections

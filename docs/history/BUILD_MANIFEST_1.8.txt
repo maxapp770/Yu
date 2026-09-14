@@ -1,0 +1,18 @@
+HEC+ 1.8.0-phase1 / versionCode 9
+Application: com.alhaitham.hec.preview
+Minimum API 29; target/compile API 35; Java 17; build-apk.sh
+APK SHA256: 411636e1c608e6ec723892f0f15e8e6254e8ab1e3b5f2cb6628d45d46f68cd68
+Signer SHA256: 834fe0788fce00dcfa72bd5e2aa28b02e384d479412ef0e0199522aa7ead1592
+Same signing identity as 1.7; no uninstall required for an ordinary update
+All APK web assets matched byte-for-byte with final source
+Review admin: admin / 123456, device-local; not ERP authorization
+Homepage marketing: all nine blocks, titles, images, filters, scheduling, individual slide destinations
+Shopping groups: independent galleries using the same marketing engine
+Courier: fixed navigation, local shared order workflow, delivery/retry/cash/returns/settlement
+Notifications: inbox and unread state, direct destinations, campaign targeting and preferences
+Browser checks: 26 (12 homepage, 6 galleries, 8 operations); zero page errors
+Engine checks: customer 82, commerce 13, management 18, package 8, marketing 12, fulfillment 10, notifications 7
+Phone browser widths: 320, 360, 412 CSS px
+Android full runtime, physical camera and native file chooser: NOT VERIFIED
+ERPNext, financial posting, multi-device synchronization and external Push: NOT CONNECTED
+Recovered from saved 1.7; 1.8 additions reapplied and tested after workspace maintenance

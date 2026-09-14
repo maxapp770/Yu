@@ -1,0 +1,10 @@
+{
+  "python_service_tests": 26,
+  "site_delivery_check_groups": 8,
+  "browser_journey_groups": 6,
+  "native_packaging_regression_groups": 6,
+  "browser_errors": [],
+  "erp_fixture": "deterministic fake transport, real service persistence/authentication",
+  "live_erp": "unverified; HTTP 403 / error 1010",
+  "android_device_test": false
+}

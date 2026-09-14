@@ -1,0 +1,131 @@
+[
+  {
+    "id": "HEC_FILM_KJ3052",
+    "version": "1",
+    "active": true,
+    "title": "قطّاعة الخضار 3 في 1",
+    "image": "slicer.jpg",
+    "productIds": [
+      "KJ3052"
+    ],
+    "groupNames": [
+      "أدوات المطبخ",
+      "متعلق بالمعدن",
+      "وصل حديثاً"
+    ],
+    "source": "external",
+    "url": "/reels/vegetable-slicer.webm",
+    "mp4": "/reels/vegetable-slicer.mp4",
+    "position": 0,
+    "startsAt": "",
+    "endsAt": "",
+    "modified": "2026-09-13T06:00:00Z"
+  },
+  {
+    "id": "HEC_FILM_A79234",
+    "version": "1",
+    "active": true,
+    "title": "ماكينة حلاقة دي إس بي",
+    "image": "clipper.jpg",
+    "productIds": [
+      "A79234"
+    ],
+    "groupNames": [
+      "أجهزة وإلكترونيات",
+      "العناية الشخصية",
+      "وصل حديثاً"
+    ],
+    "source": "external",
+    "url": "/reels/dsp-clipper.webm",
+    "mp4": "/reels/dsp-clipper.mp4",
+    "position": 1,
+    "startsAt": "",
+    "endsAt": "",
+    "modified": "2026-09-13T06:00:00Z"
+  },
+  {
+    "id": "HEC_FILM_TR006",
+    "version": "1",
+    "active": true,
+    "title": "صحن ميلامين مربع 006",
+    "image": "tray.jpg",
+    "productIds": [
+      "TR006"
+    ],
+    "groupNames": [
+      "أدوات المطبخ",
+      "سيراميك وميلامين"
+    ],
+    "source": "external",
+    "url": "/reels/square-tray.webm",
+    "mp4": "/reels/square-tray.mp4",
+    "position": 2,
+    "startsAt": "",
+    "endsAt": "",
+    "modified": "2026-09-13T06:00:00Z"
+  },
+  {
+    "id": "HEC_FILM_TH903",
+    "version": "1",
+    "active": true,
+    "title": "ثلاجة شاي ملونة 903",
+    "image": "thermos.jpg",
+    "productIds": [
+      "TH903"
+    ],
+    "groupNames": [
+      "أدوات المطبخ",
+      "أدوات مساعدة للمطبخ"
+    ],
+    "source": "external",
+    "url": "/reels/tea-flask.webm",
+    "mp4": "/reels/tea-flask.mp4",
+    "position": 3,
+    "startsAt": "",
+    "endsAt": "",
+    "modified": "2026-09-13T06:00:00Z"
+  },
+  {
+    "id": "HEC_FILM_KT50B",
+    "version": "1",
+    "active": true,
+    "title": "فرن دي إس بي 50 لتر",
+    "image": "oven.jpg",
+    "productIds": [
+      "KT50B"
+    ],
+    "groupNames": [
+      "أجهزة وإلكترونيات",
+      "مايكروويف وأفران"
+    ],
+    "source": "external",
+    "url": "/reels/dsp-oven.webm",
+    "mp4": "/reels/dsp-oven.mp4",
+    "position": 4,
+    "startsAt": "",
+    "endsAt": "",
+    "modified": "2026-09-13T06:00:00Z"
+  },
+  {
+    "id": "HEC_FILM_K0650",
+    "version": "1",
+    "active": true,
+    "title": "طقم سكين ورافعة كيك",
+    "image": "knives.jpg",
+    "productIds": [
+      "K0650"
+    ],
+    "groupNames": [
+      "أدوات المطبخ",
+      "أدوات الكيك",
+      "أدوات التقديم"
+    ],
+    "source": "external",
+    "url": "/reels/cake-serving.webm",
+    "mp4": "/reels/cake-serving.mp4",
+    "position": 5,
+    "startsAt": "",
+    "endsAt": "",
+    "modified": "2026-09-13T06:00:00Z"
+  }
+]

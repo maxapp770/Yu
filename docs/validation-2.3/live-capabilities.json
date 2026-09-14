@@ -1,0 +1,102 @@
+{
+  "read_only": true,
+  "checks": {
+    "Driver": {
+      "read": {
+        "status": 403
+      },
+      "write": {
+        "status": 403
+      },
+      "create": {
+        "status": 403
+      },
+      "submit": {
+        "status": 403
+      },
+      "sample_available": false,
+      "list_status": 403
+    },
+    "Delivery Note": {
+      "read": {
+        "status": 403
+      },
+      "write": {
+        "status": 403
+      },
+      "create": {
+        "status": 403
+      },
+      "submit": {
+        "status": 403
+      },
+      "sample_available": false,
+      "list_status": 403
+    },
+    "Delivery Trip": {
+      "read": {
+        "status": 403
+      },
+      "write": {
+        "status": 403
+      },
+      "create": {
+        "status": 403
+      },
+      "submit": {
+        "status": 403
+      },
+      "sample_available": false,
+      "list_status": 403
+    },
+    "Payment Entry": {
+      "read": {
+        "status": 403
+      },
+      "write": {
+        "status": 403
+      },
+      "create": {
+        "status": 403
+      },
+      "submit": {
+        "status": 403
+      },
+      "sample_available": false,
+      "list_status": 403
+    },
+    "Sales Order": {
+      "read": {
+        "status": 403
+      },
+      "write": {
+        "status": 403
+      },
+      "create": {
+        "status": 403
+      },
+      "submit": {
+        "status": 403
+      },
+      "sample_available": false,
+      "list_status": 403
+    },
+    "Comment": {
+      "read": {
+        "status": 403
+      },
+      "write": {
+        "status": 403
+      },
+      "create": {
+        "status": 403
+      },
+      "submit": {
+        "status": 403
+      },
+      "sample_available": false,
+      "list_status": 403
+    }
+  },
+  "interpretation": "External endpoint returned HTTP 403 / plain text error 1010, including unauthenticated ping. ERP roles and DocType permissions were not verifiable in this turn."
+}

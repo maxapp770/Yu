@@ -1,0 +1,6 @@
+{
+  "checks": 9,
+  "errors": [],
+  "modules": 22,
+  "fixture": "trusted transport in Playwright interception only; shipped application remains blocked"
+}

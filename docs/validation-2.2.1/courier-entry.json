@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "Courier and store account destinations remain separately reachable at 320/390/460px",
+    "Unconfigured Android points to connected browser review without collecting credentials or requesting the old add-on",
+    "The link opens courier access; direct navigation cannot skip explicit preview entry",
+    "Unconnected courier sign-in neither stores a password nor grants a session",
+    "Preview delivery navigation and logout work without granting administrative access",
+    "Customer administrator route remains unavailable; no browser errors"
+  ],
+  "errors": [],
+  "mode": "packaged customer UI, local courier preview only"
+}

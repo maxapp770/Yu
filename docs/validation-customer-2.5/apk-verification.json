@@ -1,0 +1,17 @@
+{
+  "file": "HEC-Customer-2.5.0.apk",
+  "version": "2.5.0",
+  "versionCode": 17,
+  "package": "com.alhaitham.hec.preview",
+  "minAndroid": "10",
+  "bytes": 3270641,
+  "sha256": "f809fd23659d24d66611d50504de4f325ea641fd6117a2a2284b5081c6f6a145",
+  "certificateSha256": "834fe0788fce00dcfa72bd5e2aa28b02e384d479412ef0e0199522aa7ead1592",
+  "sameCertificateAsCustomer240": true,
+  "customerShellIncluded": true,
+  "administrativeUIExcluded": true,
+  "entryResourcesChecked": 41,
+  "includedLocalMp4s": 6,
+  "physicalDeviceTest": false,
+  "tests": "12 browser journey checks; local fixtures, native commands intercepted; real bundled video playback verified"
+}

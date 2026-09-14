@@ -1,0 +1,89 @@
+{
+  "at": "2026-09-12T02:36:18.485742+00:00",
+  "server": "https://erptest.wahatalhaitham.com",
+  "read_only": true,
+  "checks": {
+    "authentication": {
+      "ok": true,
+      "user": "support@wahatalhaitham.com",
+      "status": 200
+    },
+    "roles": {
+      "status": 200,
+      "roles": [],
+      "user_type": null,
+      "enabled": 1
+    },
+    "Company": {
+      "status": 200,
+      "rows": [
+        {
+          "name": "عملاق التوفير",
+          "default_currency": "YER"
+        },
+        {
+          "name": "مركز واحة الهيثم",
+          "default_currency": "YER"
+        }
+      ]
+    },
+    "Price List": {
+      "status": 200,
+      "rows": [
+        {
+          "name": "تسعيرة المبيعات - عملاق التوفير - YER",
+          "enabled": 1,
+          "selling": 1,
+          "currency": "YER"
+        },
+        {
+          "name": "تسعيرة المبيعات - واحة الهيثم - YER",
+          "enabled": 1,
+          "selling": 1,
+          "currency": "YER"
+        }
+      ]
+    },
+    "Warehouse": {
+      "status": 200,
+      "rows": [
+        {
+          "name": "All Warehouses - Tawfeer",
+          "company": "عملاق التوفير",
+          "is_group": 1
+        },
+        {
+          "name": "All Warehouses - WHC",
+          "company": "مركز واحة الهيثم",
+          "is_group": 1
+        },
+        {
+          "name": "المخزن الرئيسي - Tawfeer",
+          "company": "عملاق التوفير",
+          "is_group": 0
+        },
+        {
+          "name": "المخزن الرئيسي - WHC",
+          "company": "مركز واحة الهيثم",
+          "is_group": 0
+        },
+        {
+          "name": "مخزن حمام دبا - WHC",
+          "company": "مركز واحة الهيثم",
+          "is_group": 0
+        },
+        {
+          "name": "مخزن حي الطيران - WHC",
+          "company": "مركز واحة الهيثم",
+          "is_group": 0
+        }
+      ]
+    }
+  },
+  "bridge": {
+    "installed": false,
+    "status": 417,
+    "reason": "Frappe returned: app hec_bridge is not installed"
+  },
+  "administrative_role_verified": false
+}

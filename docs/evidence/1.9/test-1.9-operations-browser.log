@@ -1,0 +1,8 @@
+PASS Shopping gallery saves direction, timing, autoplay and independent product destination
+PASS Courier navigation responds to icon and label taps
+PASS Saved customer order generates a notification that opens that order
+PASS Preparation, assignment, courier acceptance, failure, retry and confirmed cash delivery
+PASS Return, settlement and order state persist after reload without duplicate cash
+PASS Marketing product search and direct destination with persisted read state
+PASS Marketing preferences preserve order updates and courier returns to its notification center
+PASS Shop, courier and notification layouts fit three phone widths

@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "Administrative login uses the real service and ERP role verification",
+    "Integration account is displayed separately from administrative identity",
+    "ERP company and price selectors load and integration identity is read-only",
+    "Report filters, results, timestamps and saved views work through the service",
+    "Customer account is created in the service and mapped to ERP Customer",
+    "Edited campaign is published through shared storage into the separate customer app",
+    "Personal customer login stores no password in localStorage",
+    "Customer checkout creates an ERP draft and opens its owned order detail",
+    "Notification navigates to the permitted order",
+    "Guides contain the standalone setup, identity model and migration limitations",
+    "Administration and reports fit phone widths without page overflow",
+    "Reports-only role sees reports without management controls",
+    "No browser runtime exceptions"
+  ],
+  "errors": [],
+  "backend": "Real service dispatcher, SQLite and WebCrypto; Frappe HTTP fixture. Browser UI is Android assets."
+}

@@ -1,0 +1,26 @@
+{
+  "file": "HEC-admin-2.5.0.apk",
+  "package": "com.alhaitham.hec.admin",
+  "version": "2.5.0",
+  "version_code": 17,
+  "min_android": "10",
+  "bytes": 9569233,
+  "sha256": "0c0d4035c206b0b189bbb5fd06c11dfe13f245f0b1263a8826deadcd96e5e8e4",
+  "certificate_sha256": "834fe0788fce00dcfa72bd5e2aa28b02e384d479412ef0e0199522aa7ead1592",
+  "same_certificate_as_2_4_0": true,
+  "checked_entry_resources": 65,
+  "current_studio_assets_verified": [
+    "studio.js",
+    "studio-engine.js",
+    "studio-source.js",
+    "studio.css",
+    "item-media.js",
+    "native-tools.js",
+    "admin-guide-data.js",
+    "reels/controls.js"
+  ],
+  "web_bridge_absent": true,
+  "device_test": false,
+  "service_test_count": 35,
+  "browser": "Chromium; native chooser mocked; 320/390/760px"
+}

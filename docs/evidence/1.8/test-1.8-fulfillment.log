@@ -1,0 +1,11 @@
+PASS Starting a saved order is idempotent and rejects unknown orders
+PASS Management actions require authorization and legal sequence
+PASS Stale versions cannot change the workflow
+PASS Assigned courier must be entered and online
+PASS Failed storage leaves state and events unchanged
+PASS Delivery requires recipient and cash proof and cannot be repeated
+PASS Cash settlement requires admin and happens once
+PASS Return approval, receipt and refund follow the recorded stages
+PASS Prepaid failure and retry never collect cash twice
+PASS Events are uniquely identified and target the correct order
+10 fulfillment checks passed

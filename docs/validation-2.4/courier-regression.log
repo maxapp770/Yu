@@ -1,0 +1,6 @@
+PASS Courier and store account destinations remain separately reachable at 320/390/460px
+PASS Unconfigured Android points to connected browser review without collecting credentials or requesting the old add-on
+PASS The link opens courier access; direct navigation cannot skip explicit preview entry
+PASS Unconfigured native courier offers connected browser review and does not collect credentials
+PASS Preview delivery navigation and logout work without granting administrative access
+PASS Customer administrator route remains unavailable; no browser errors

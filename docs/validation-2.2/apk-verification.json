@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "role": "customer",
+      "compiled": true,
+      "signed": true,
+      "version": "2.2.0",
+      "service_origin_configured": false,
+      "admin_assets": false,
+      "reports_assets": false
+    },
+    {
+      "role": "admin",
+      "compiled": true,
+      "signed": true,
+      "version": "2.2.0",
+      "service_origin_configured": false,
+      "admin_assets": true,
+      "reports_assets": true
+    }
+  ],
+  "provided_credentials_found": false,
+  "device_tested": false
+}

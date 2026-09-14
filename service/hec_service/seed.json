@@ -1,0 +1,3168 @@
+{
+  "home": [
+    {
+      "id": "shortcuts",
+      "title": "الاختصارات",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 0,
+      "displayTitle": "الاختصارات",
+      "showTitle": false,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "grid",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": false,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 4,
+        "fit": "contain",
+        "ratio": "auto",
+        "inherit": false
+      }
+    },
+    {
+      "id": "banners",
+      "title": "البانرات الرئيسية",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 1,
+      "displayTitle": "البانرات الرئيسية",
+      "showTitle": false,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "rail",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": true,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 1,
+        "fit": "contain",
+        "ratio": "auto",
+        "inherit": false
+      }
+    },
+    {
+      "id": "deals",
+      "title": "شريط الصفقات",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 2,
+      "displayTitle": "تسوق بأقل الأسعار | عروض وصفقات",
+      "showTitle": true,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "rail",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": false,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 2,
+        "fit": "contain",
+        "ratio": "square",
+        "inherit": false
+      }
+    },
+    {
+      "id": "golden",
+      "title": "الساعة الذهبية",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 3,
+      "displayTitle": "الساعة الذهبية",
+      "showTitle": false,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "rail",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": true,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 1,
+        "fit": "contain",
+        "ratio": "auto",
+        "inherit": false
+      }
+    },
+    {
+      "id": "groups",
+      "title": "الأقسام والمجموعات",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 4,
+      "displayTitle": "الأقسام والمجموعات",
+      "showTitle": false,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "rail",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": false,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 1,
+        "fit": "contain",
+        "ratio": "auto",
+        "inherit": false
+      }
+    },
+    {
+      "id": "suggestions",
+      "title": "مقترحات الهيثم",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 5,
+      "displayTitle": "مقترحات الهيثم",
+      "showTitle": true,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "rail",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": false,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 1,
+        "fit": "contain",
+        "ratio": "auto",
+        "inherit": false
+      }
+    },
+    {
+      "id": "new",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 6,
+      "displayTitle": "وصل حديثاً",
+      "showTitle": true,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "rail",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": false,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 2,
+        "fit": "contain",
+        "ratio": "auto",
+        "inherit": false
+      }
+    },
+    {
+      "id": "best",
+      "title": "الأكثر مبيعاً",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 7,
+      "displayTitle": "الأكثر مبيعاً",
+      "showTitle": true,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "grid",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": false,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 2,
+        "fit": "contain",
+        "ratio": "auto",
+        "inherit": false
+      }
+    },
+    {
+      "id": "automation",
+      "title": "مختارات آلية",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 8,
+      "displayTitle": "مختارات آلية",
+      "showTitle": true,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "rail",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": false,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 2,
+        "fit": "contain",
+        "ratio": "auto",
+        "inherit": false
+      }
+    },
+    {
+      "id": "footer",
+      "title": "التذييل",
+      "version": "1",
+      "active": true,
+      "kind": "رواق منتجات",
+      "position": 9,
+      "displayTitle": "كل احتياجاتك المنزلية في مكان واحد",
+      "showTitle": false,
+      "buttonText": "عرض الكل",
+      "motion": {
+        "layout": "rail",
+        "effect": "slide",
+        "seconds": 5,
+        "duration": 450,
+        "autoplay": false,
+        "loop": true,
+        "direction": "rtl",
+        "dots": true,
+        "arrows": true,
+        "pauseOnInteraction": true,
+        "columns": 1,
+        "fit": "contain",
+        "ratio": "auto",
+        "inherit": false
+      }
+    }
+  ],
+  "home-texts": [
+    {
+      "id": "home-deals",
+      "title": "تسوق بأقل الأسعار | عروض وصفقات",
+      "version": "1",
+      "active": true,
+      "key": "home.deals",
+      "text": "تسوق بأقل الأسعار | عروض وصفقات",
+      "locale": "ar",
+      "position": 0
+    },
+    {
+      "id": "home-suggestions",
+      "title": "مقترحات الهيثم",
+      "version": "1",
+      "active": true,
+      "key": "home.suggestions",
+      "text": "مقترحات الهيثم",
+      "locale": "ar",
+      "position": 1
+    },
+    {
+      "id": "home-new",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "key": "home.new",
+      "text": "وصل حديثاً",
+      "locale": "ar",
+      "position": 2
+    },
+    {
+      "id": "home-best",
+      "title": "الأكثر مبيعاً",
+      "version": "1",
+      "active": true,
+      "key": "home.best",
+      "text": "الأكثر مبيعاً",
+      "locale": "ar",
+      "position": 3
+    },
+    {
+      "id": "home-footer",
+      "title": "كل احتياجاتك المنزلية في مكان واحد",
+      "version": "1",
+      "active": true,
+      "key": "home.footer",
+      "text": "كل احتياجاتك المنزلية في مكان واحد",
+      "locale": "ar",
+      "position": 4
+    },
+    {
+      "id": "header-search",
+      "title": "ابحث عن منتجاتك المفضلة...",
+      "version": "1",
+      "active": true,
+      "key": "header.search",
+      "text": "ابحث عن منتجاتك المفضلة...",
+      "locale": "ar",
+      "position": 5
+    }
+  ],
+  "home-shortcuts": [
+    {
+      "id": "shortcut-0",
+      "title": "سيراميك وميلامين",
+      "version": "1",
+      "active": true,
+      "image": "cat-ceramic.jpg",
+      "destination": "group-0",
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shortcut-1",
+      "title": "أدوات المطبخ",
+      "version": "1",
+      "active": true,
+      "image": "cat-kitchen.jpg",
+      "destination": "group-0",
+      "position": 1,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shortcut-2",
+      "title": "زجاجيات",
+      "version": "1",
+      "active": true,
+      "image": "cat-glass.jpg",
+      "destination": "group-0",
+      "position": 2,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shortcut-3",
+      "title": "أدوات البهارات والزيت",
+      "version": "1",
+      "active": true,
+      "image": "cat-spices.jpg",
+      "destination": "group-0",
+      "position": 3,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shortcut-4",
+      "title": "بلاستيكية",
+      "version": "1",
+      "active": true,
+      "image": "cat-plasticware.jpg",
+      "destination": "group-5",
+      "position": 4,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shortcut-5",
+      "title": "أدوات مساعدة للمطبخ",
+      "version": "1",
+      "active": true,
+      "image": "cat-kitchen-tools.jpg",
+      "destination": "group-0",
+      "position": 5,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shortcut-6",
+      "title": "منتجات على المتجر",
+      "version": "1",
+      "active": true,
+      "image": "cat-global.jpg",
+      "destination": "group-1",
+      "position": 6,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "home-banners": [
+    {
+      "id": "banner-0",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "image": "campaign-new.jpg",
+      "destination": "catalog/new",
+      "seconds": 5,
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "useOwnSeconds": false
+    },
+    {
+      "id": "banner-1",
+      "title": "تسوق الآن",
+      "version": "1",
+      "active": true,
+      "image": "campaign-shop.jpg",
+      "destination": "shop",
+      "seconds": 5,
+      "position": 1,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "useOwnSeconds": false
+    },
+    {
+      "id": "banner-2",
+      "title": "عروض لفترة محدودة",
+      "version": "1",
+      "active": true,
+      "image": "campaign-limited.jpg",
+      "destination": "offers",
+      "seconds": 5,
+      "position": 2,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "useOwnSeconds": false
+    },
+    {
+      "id": "banner-3",
+      "title": "التسويق بالعمولة",
+      "version": "1",
+      "active": true,
+      "image": "campaign-affiliate.jpg",
+      "destination": "affiliate",
+      "seconds": 5,
+      "position": 3,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "useOwnSeconds": false
+    },
+    {
+      "id": "banner-4",
+      "title": "ضاعف مبيعاتك",
+      "version": "1",
+      "active": true,
+      "image": "campaign-growth.jpg",
+      "destination": "affiliate",
+      "seconds": 5,
+      "position": 4,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "useOwnSeconds": false
+    },
+    {
+      "id": "banner-5",
+      "title": "منتجات على المتجر",
+      "version": "1",
+      "active": true,
+      "image": "campaign-global.jpg",
+      "destination": "innovative",
+      "seconds": 5,
+      "position": 5,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "useOwnSeconds": false
+    }
+  ],
+  "home-deals": [
+    {
+      "id": "deal-0",
+      "title": "العناية الشخصية",
+      "version": "1",
+      "active": true,
+      "image": "deal-hair.jpg",
+      "destination": "group-0",
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "deal-1",
+      "title": "أدوات المطبخ",
+      "version": "1",
+      "active": true,
+      "image": "deal-home.jpg",
+      "destination": "group-0",
+      "position": 1,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "deal-2",
+      "title": "كل المنتجات",
+      "version": "1",
+      "active": true,
+      "image": "deal-price.jpg",
+      "destination": "group-0",
+      "position": 2,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "home-groups": [
+    {
+      "id": "section-0",
+      "title": "أدوات المطبخ",
+      "version": "1",
+      "active": true,
+      "sectionId": "section-0",
+      "image": "banner-kitchen.jpg",
+      "children": [
+        {
+          "title": "سيراميك وميلامين",
+          "image": "cat-ceramic.jpg",
+          "target": "سيراميك وميلامين",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "زجاجيات",
+          "image": "cat-glass.jpg",
+          "target": "زجاجيات",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "أدوات البهارات والزيت",
+          "image": "cat-spices.jpg",
+          "target": "أدوات البهارات والزيت",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "بلاستيكية",
+          "image": "cat-plasticware.jpg",
+          "target": "بلاستيكية",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "أدوات مساعدة للمطبخ",
+          "image": "cat-kitchen-tools.jpg",
+          "target": "أدوات مساعدة للمطبخ",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "علب الزيت والعسل",
+          "image": "cat-honey.jpg",
+          "target": "علب الزيت والعسل",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "متعلق بالمعدن",
+          "image": "cat-metal.jpg",
+          "target": "متعلق بالمعدن",
+          "specialText": "",
+          "specialMode": "inherit"
+        }
+      ],
+      "groupIds": [],
+      "productIds": [],
+      "showMore": true,
+      "specialText": "عرض خاص",
+      "showSpecial": true,
+      "position": 0,
+      "originalName": "أدوات المطبخ",
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [
+        "banner-cookware.jpg",
+        "banner-discount.jpg"
+      ],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "section-1",
+      "title": "منتجات على المتجر",
+      "version": "1",
+      "active": true,
+      "sectionId": "section-1",
+      "image": "campaign-global.jpg",
+      "children": [
+        {
+          "title": "مبتكرة",
+          "image": "cat-innovative.jpg",
+          "target": "مبتكرة",
+          "specialText": "",
+          "specialMode": "inherit"
+        }
+      ],
+      "groupIds": [],
+      "productIds": [],
+      "showMore": true,
+      "specialText": "عرض خاص",
+      "showSpecial": true,
+      "position": 1,
+      "originalName": "منتجات على المتجر",
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "section-2",
+      "title": "أجهزة وإلكترونيات",
+      "version": "1",
+      "active": true,
+      "sectionId": "section-2",
+      "image": "banner-vacuum.jpg",
+      "children": [
+        {
+          "title": "مراوح ومكيفات",
+          "image": "cat-fans.jpg",
+          "target": "مراوح ومكيفات",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "شاشات وأفران",
+          "image": "cat-screens.jpg",
+          "target": "شاشات وأفران",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "كنسات وكوايات",
+          "image": "cat-irons.jpg",
+          "target": "كنسات وكوايات",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "العناية الشخصية",
+          "image": "cat-personal.jpg",
+          "target": "العناية الشخصية",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "أجهزة خفيفة",
+          "image": "cat-small.jpg",
+          "target": "أجهزة خفيفة",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "مايكروويف وأفران",
+          "image": "cat-ovens.jpg",
+          "target": "مايكروويف وأفران",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "غسالات وثلاجات",
+          "image": "cat-washers.jpg",
+          "target": "غسالات وثلاجات",
+          "specialText": "",
+          "specialMode": "inherit"
+        }
+      ],
+      "groupIds": [],
+      "productIds": [],
+      "showMore": true,
+      "specialText": "عرض خاص",
+      "showSpecial": true,
+      "position": 2,
+      "originalName": "أجهزة وإلكترونيات",
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [
+        "banner-irons.jpg"
+      ],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "section-3",
+      "title": "أدوات الكيك",
+      "version": "1",
+      "active": true,
+      "sectionId": "section-3",
+      "image": "banner-kitchen.jpg",
+      "children": [
+        {
+          "title": "أدوات الكيك",
+          "image": "cat-baking.jpg",
+          "target": "أدوات الكيك",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "قوالب الكيك",
+          "image": "jars.jpg",
+          "target": "قوالب الكيك",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "أدوات التقديم",
+          "image": "knives.jpg",
+          "target": "أدوات التقديم",
+          "specialText": "",
+          "specialMode": "inherit"
+        }
+      ],
+      "groupIds": [],
+      "productIds": [],
+      "showMore": true,
+      "specialText": "عرض خاص",
+      "showSpecial": true,
+      "position": 3,
+      "originalName": "أدوات الكيك",
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "section-4",
+      "title": "بلاستيكية",
+      "version": "1",
+      "active": true,
+      "sectionId": "section-4",
+      "image": "banner-scrub.jpg",
+      "children": [
+        {
+          "title": "سلات بلاستيك كبيرة",
+          "image": "cat-basket.jpg",
+          "target": "سلات بلاستيك كبيرة",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "سلات خضار أربع طبقات",
+          "image": "cat-rack-plastic.jpg",
+          "target": "سلات خضار أربع طبقات",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "كراسي مطبخ",
+          "image": "hec-product.jpg",
+          "target": "كراسي مطبخ",
+          "specialText": "",
+          "specialMode": "inherit"
+        }
+      ],
+      "groupIds": [],
+      "productIds": [],
+      "showMore": true,
+      "specialText": "عرض خاص",
+      "showSpecial": true,
+      "position": 4,
+      "originalName": "بلاستيكية",
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "section-5",
+      "title": "دراجات هوائية وسيارات كهربائية",
+      "version": "1",
+      "active": true,
+      "sectionId": "section-5",
+      "image": "banner-bikes.jpg",
+      "children": [
+        {
+          "title": "اسكوتر",
+          "image": "cat-scooter.jpg",
+          "target": "اسكوتر",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "دراجات أطفال",
+          "image": "hec-product.jpg",
+          "target": "دراجات أطفال",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "سيارات أطفال",
+          "image": "cat-toys.jpg",
+          "target": "سيارات أطفال",
+          "specialText": "",
+          "specialMode": "inherit"
+        }
+      ],
+      "groupIds": [],
+      "productIds": [],
+      "showMore": true,
+      "specialText": "عرض خاص",
+      "showSpecial": true,
+      "position": 5,
+      "originalName": "دراجات هوائية وسيارات كهربائية",
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [
+        "banner-kids-cars.jpg"
+      ],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "section-6",
+      "title": "منظفات",
+      "version": "1",
+      "active": true,
+      "sectionId": "section-6",
+      "image": "banner-cleaning.jpg",
+      "children": [
+        {
+          "title": "منظفات بلاط وأرضيات",
+          "image": "cat-floor-cleaner.jpg",
+          "target": "منظفات بلاط وأرضيات",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "منظفات الملابس",
+          "image": "hec-product.jpg",
+          "target": "منظفات الملابس",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "منظفات الزجاج",
+          "image": "hec-product.jpg",
+          "target": "منظفات الزجاج",
+          "specialText": "",
+          "specialMode": "inherit"
+        }
+      ],
+      "groupIds": [],
+      "productIds": [],
+      "showMore": true,
+      "specialText": "عرض خاص",
+      "showSpecial": true,
+      "position": 6,
+      "originalName": "منظفات",
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "section-7",
+      "title": "مفروشات",
+      "version": "1",
+      "active": true,
+      "sectionId": "section-7",
+      "image": "banner-fragrance.jpg",
+      "children": [
+        {
+          "title": "دعسات مطبخ",
+          "image": "hec-product.jpg",
+          "target": "دعسات مطبخ",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "دعسات متنوعة",
+          "image": "cat-rug.jpg",
+          "target": "دعسات متنوعة",
+          "specialText": "",
+          "specialMode": "inherit"
+        },
+        {
+          "title": "دعسات أبواب",
+          "image": "hec-product.jpg",
+          "target": "دعسات أبواب",
+          "specialText": "",
+          "specialMode": "inherit"
+        }
+      ],
+      "groupIds": [],
+      "productIds": [],
+      "showMore": true,
+      "specialText": "عرض خاص",
+      "showSpecial": true,
+      "position": 7,
+      "originalName": "مفروشات",
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "home-suggestions": [
+    {
+      "id": "suggestion-1",
+      "title": "غسالات فاليو",
+      "version": "1",
+      "active": true,
+      "image": "washers.jpg",
+      "productIds": [],
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "home-new": [
+    {
+      "id": "home-new",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "productIds": [
+        "A79234",
+        "KJ3052",
+        "N681012",
+        "N009",
+        "N12",
+        "N250",
+        "N8051",
+        "N27",
+        "N8235"
+      ],
+      "limit": 100,
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "home-best": [
+    {
+      "id": "home-best",
+      "title": "الأكثر مبيعاً",
+      "version": "1",
+      "active": true,
+      "mode": "manual",
+      "productIds": [
+        "TR006",
+        "J0350"
+      ],
+      "limit": 10,
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "home-footer": [
+    {
+      "id": "home-footer",
+      "title": "تواصل مع الهيثم",
+      "version": "1",
+      "active": true,
+      "text": "كل احتياجاتك المنزلية في مكان واحد",
+      "image": "logo.jpg",
+      "youtube": "",
+      "facebook": "https://www.facebook.com/HaithemEkhwanCenter/",
+      "instagram": "",
+      "whatsapp": "",
+      "play": "",
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "marketing-automation": [
+    {
+      "id": "automation-sample",
+      "title": "اختيارات مصورة — مثال قابل للتعديل",
+      "version": "1",
+      "active": false,
+      "automation": {
+        "source": "images",
+        "window": "آخر عدد أيام",
+        "days": 30,
+        "from": "",
+        "to": "",
+        "threshold": 5,
+        "stockThreshold": 100,
+        "limit": 6,
+        "requireImage": true,
+        "excludeNonStock": true,
+        "filters": {
+          "enabled": false
+        },
+        "title": "اختيارات تستحق المشاهدة",
+        "body": "شاهد {count} أصناف مختارة، تبدأ من {min_price} ر.ي.",
+        "customers": "الجميع",
+        "customerIds": [],
+        "inbox": true,
+        "home": false,
+        "newsletter": false,
+        "schedule": "يدوي",
+        "time": "10:00",
+        "weekday": 6,
+        "intervalHours": 24,
+        "quiet": false,
+        "quietStart": "22:00",
+        "quietEnd": "08:00",
+        "lifeHours": 72,
+        "changedOnly": true,
+        "claim": "ترويج عام",
+        "execution": "معاينة محلية"
+      },
+      "startsAt": "",
+      "endsAt": ""
+    }
+  ],
+  "automation-log": [],
+  "categories": [
+    {
+      "id": "group-0",
+      "title": "أدوات المطبخ",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [
+        {
+          "title": "سيراميك وميلامين",
+          "image": "cat-ceramic.jpg",
+          "target": "سيراميك وميلامين"
+        },
+        {
+          "title": "زجاجيات",
+          "image": "cat-glass.jpg",
+          "target": "زجاجيات"
+        },
+        {
+          "title": "أدوات البهارات والزيت",
+          "image": "cat-spices.jpg",
+          "target": "أدوات البهارات والزيت"
+        },
+        {
+          "title": "بلاستيكية",
+          "image": "cat-plasticware.jpg",
+          "target": "بلاستيكية"
+        },
+        {
+          "title": "أدوات مساعدة للمطبخ",
+          "image": "cat-kitchen-tools.jpg",
+          "target": "أدوات مساعدة للمطبخ"
+        },
+        {
+          "title": "علب الزيت والعسل",
+          "image": "cat-honey.jpg",
+          "target": "علب الزيت والعسل"
+        },
+        {
+          "title": "متعلق بالمعدن",
+          "image": "cat-metal.jpg",
+          "target": "متعلق بالمعدن"
+        }
+      ],
+      "productIds": [],
+      "image": "cat-kitchen.jpg",
+      "position": 0,
+      "originalName": "أدوات المطبخ"
+    },
+    {
+      "id": "group-1",
+      "title": "منتجات على المتجر",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [
+        {
+          "title": "كل المنتجات",
+          "image": "cat-global.jpg",
+          "target": "كل المنتجات"
+        }
+      ],
+      "productIds": [],
+      "image": "cat-global.jpg",
+      "position": 1,
+      "originalName": "منتجات على المتجر"
+    },
+    {
+      "id": "group-2",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [],
+      "productIds": [],
+      "image": "cat-new.jpg",
+      "position": 2,
+      "originalName": "وصل حديثاً"
+    },
+    {
+      "id": "group-3",
+      "title": "أجهزة وإلكترونيات",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [
+        {
+          "title": "مراوح ومكيفات",
+          "image": "cat-fans.jpg",
+          "target": "مراوح ومكيفات"
+        },
+        {
+          "title": "شاشات وأفران",
+          "image": "cat-screens.jpg",
+          "target": "شاشات وأفران"
+        },
+        {
+          "title": "كنسات وكوايات",
+          "image": "cat-irons.jpg",
+          "target": "كنسات وكوايات"
+        },
+        {
+          "title": "العناية الشخصية",
+          "image": "cat-personal.jpg",
+          "target": "العناية الشخصية"
+        },
+        {
+          "title": "أجهزة خفيفة",
+          "image": "cat-small.jpg",
+          "target": "أجهزة خفيفة"
+        },
+        {
+          "title": "مايكروويف وأفران",
+          "image": "cat-ovens.jpg",
+          "target": "مايكروويف وأفران"
+        },
+        {
+          "title": "غسالات وثلاجات",
+          "image": "cat-washers.jpg",
+          "target": "غسالات وثلاجات"
+        }
+      ],
+      "productIds": [],
+      "image": "cat-electronics.jpg",
+      "position": 3,
+      "originalName": "أجهزة وإلكترونيات"
+    },
+    {
+      "id": "group-4",
+      "title": "أدوات الكيك",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [
+        {
+          "title": "أدوات الكيك",
+          "image": "jars.jpg",
+          "target": "أدوات الكيك"
+        }
+      ],
+      "productIds": [],
+      "image": "cat-baking.jpg",
+      "position": 4,
+      "originalName": "أدوات الكيك"
+    },
+    {
+      "id": "group-5",
+      "title": "بلاستيكية",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [
+        {
+          "title": "بلاستيكية",
+          "image": "cat-plasticware.jpg",
+          "target": "بلاستيكية"
+        }
+      ],
+      "productIds": [],
+      "image": "cat-plastic.jpg",
+      "position": 5,
+      "originalName": "بلاستيكية"
+    },
+    {
+      "id": "group-6",
+      "title": "ألعاب",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [
+        {
+          "title": "ألعاب",
+          "image": "cat-toys.jpg",
+          "target": "ألعاب"
+        }
+      ],
+      "productIds": [],
+      "image": "cat-toys.jpg",
+      "position": 6,
+      "originalName": "ألعاب"
+    },
+    {
+      "id": "group-7",
+      "title": "دراجات هوائية وسيارات كهربائية",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [
+        {
+          "title": "اسكوتر",
+          "image": "cat-scooter.jpg",
+          "target": "اسكوتر"
+        },
+        {
+          "title": "دراجات أطفال",
+          "image": "hec-product.jpg",
+          "target": "دراجات أطفال"
+        },
+        {
+          "title": "سيارات أطفال",
+          "image": "cat-toys.jpg",
+          "target": "سيارات أطفال"
+        }
+      ],
+      "productIds": [],
+      "image": "cat-scooter.jpg",
+      "position": 7,
+      "originalName": "دراجات هوائية وسيارات كهربائية"
+    },
+    {
+      "id": "group-8",
+      "title": "منظفات",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [
+        {
+          "title": "منظفات بلاط وأرضيات",
+          "image": "cat-floor-cleaner.jpg",
+          "target": "منظفات بلاط وأرضيات"
+        },
+        {
+          "title": "منظفات الملابس",
+          "image": "hec-product.jpg",
+          "target": "منظفات الملابس"
+        },
+        {
+          "title": "منظفات الزجاج",
+          "image": "hec-product.jpg",
+          "target": "منظفات الزجاج"
+        }
+      ],
+      "productIds": [],
+      "image": "cat-floor-cleaner.jpg",
+      "position": 8,
+      "originalName": "منظفات"
+    },
+    {
+      "id": "group-9",
+      "title": "مفروشات",
+      "version": "1",
+      "active": true,
+      "parent": "",
+      "children": [
+        {
+          "title": "دعسات مطبخ",
+          "image": "hec-product.jpg",
+          "target": "دعسات مطبخ"
+        },
+        {
+          "title": "دعسات متنوعة",
+          "image": "cat-rug.jpg",
+          "target": "دعسات متنوعة"
+        },
+        {
+          "title": "دعسات أبواب",
+          "image": "hec-product.jpg",
+          "target": "دعسات أبواب"
+        }
+      ],
+      "productIds": [],
+      "image": "hec-product.jpg",
+      "position": 9,
+      "originalName": "مفروشات"
+    }
+  ],
+  "shop-banners": [
+    {
+      "id": "shop-banner-0",
+      "title": "أدوات المطبخ",
+      "version": "1",
+      "active": true,
+      "groupId": "group-0",
+      "image": "banner-kitchen.jpg",
+      "destination": "group-0",
+      "position": 0,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shop-banner-1",
+      "title": "منتجات على المتجر",
+      "version": "1",
+      "active": true,
+      "groupId": "group-1",
+      "image": "washers.jpg",
+      "destination": "group-1",
+      "position": 1,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shop-banner-2",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-2",
+      "image": "banner-discount.jpg",
+      "destination": "group-2",
+      "position": 2,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shop-banner-3",
+      "title": "أجهزة وإلكترونيات",
+      "version": "1",
+      "active": true,
+      "groupId": "group-3",
+      "image": "banner-electronics.jpg",
+      "destination": "group-3",
+      "position": 3,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shop-banner-4",
+      "title": "أدوات الكيك",
+      "version": "1",
+      "active": true,
+      "groupId": "group-4",
+      "image": "banner-cookware.jpg",
+      "destination": "group-4",
+      "position": 4,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shop-banner-5",
+      "title": "بلاستيكية",
+      "version": "1",
+      "active": true,
+      "groupId": "group-5",
+      "image": "banner-kitchen.jpg",
+      "destination": "group-5",
+      "position": 5,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shop-banner-6",
+      "title": "ألعاب",
+      "version": "1",
+      "active": true,
+      "groupId": "group-6",
+      "image": "banner-kitchen.jpg",
+      "destination": "group-6",
+      "position": 6,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shop-banner-7",
+      "title": "دراجات هوائية وسيارات كهربائية",
+      "version": "1",
+      "active": true,
+      "groupId": "group-7",
+      "image": "banner-bikes.jpg",
+      "destination": "group-7",
+      "position": 7,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shop-banner-8",
+      "title": "منظفات",
+      "version": "1",
+      "active": true,
+      "groupId": "group-8",
+      "image": "banner-cleaning.jpg",
+      "destination": "group-8",
+      "position": 8,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "shop-banner-9",
+      "title": "مفروشات",
+      "version": "1",
+      "active": true,
+      "groupId": "group-9",
+      "image": "banner-fragrance.jpg",
+      "destination": "group-9",
+      "position": 9,
+      "gallery": [],
+      "motion": {
+        "columns": 1,
+        "autoplay": true,
+        "inherit": false
+      },
+      "audience": {
+        "enabled": false
+      },
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "products": [
+    {
+      "id": "A79234",
+      "title": "مكينة حلاقة DSP90314 وات 3",
+      "version": "1",
+      "active": true,
+      "code": "A79234",
+      "price": 6000,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "العناية الشخصية",
+      "brand": "دي إس بي",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "مكينة حلاقة DSP 90314 مع ملحقات للعناية بالشعر.",
+      "variants": "",
+      "image": "clipper.jpg"
+    },
+    {
+      "id": "KJ3052",
+      "title": "قطاعة شيبس شرائح وخضار دي إس بي 3 في 1",
+      "version": "1",
+      "active": true,
+      "code": "KJ3052",
+      "price": 6000,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "دي إس بي",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "قطاعة شرائح وخضار 3 في 1، مع ثلاثة ملحقات لتحضير الخضار.",
+      "variants": "",
+      "image": "slicer.jpg"
+    },
+    {
+      "id": "CA015",
+      "title": "طقم حلل 12 قطعة دي إس بي",
+      "version": "1",
+      "active": true,
+      "code": "CA015",
+      "price": 50000,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "دي إس بي",
+      "stock": "غير متصل",
+      "unit": "طقم",
+      "description": "طقم أواني طبخ من 12 قطعة بأغطية زجاجية.",
+      "variants": "",
+      "image": "pots.jpg"
+    },
+    {
+      "id": "P1001",
+      "title": "طقم صواني دائري",
+      "version": "1",
+      "active": true,
+      "code": "P1001",
+      "price": 3000,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "طقم",
+      "description": "مجموعة صوانٍ دائرية بأحجام متعددة.",
+      "variants": "",
+      "image": "pans.jpg"
+    },
+    {
+      "id": "K0650",
+      "title": "طقم سكين مع رافعة كيك",
+      "version": "1",
+      "active": true,
+      "code": "K0650",
+      "price": 650,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "طقم",
+      "description": "طقم تقديم للحلويات يتكون من سكين ورافعة كيك.",
+      "variants": "",
+      "image": "knives.jpg"
+    },
+    {
+      "id": "J0350",
+      "title": "قوالب كعك استيل 3 × 1 باكت",
+      "version": "1",
+      "active": true,
+      "code": "J0350",
+      "price": 350,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "قوالب لتحضير الكعك والحلويات.",
+      "variants": "",
+      "image": "jars.jpg"
+    },
+    {
+      "id": "TR006",
+      "title": "صحن ميلامين مربع 006",
+      "version": "1",
+      "active": true,
+      "code": "TR006",
+      "price": 200,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "صحن ميلامين مربع موديل 006.",
+      "variants": "",
+      "image": "tray.jpg"
+    },
+    {
+      "id": "KT50B",
+      "title": "فرن كهرباء 50 لتر KT50B دي إس بي",
+      "version": "1",
+      "active": true,
+      "code": "KT50B",
+      "price": 61000,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أجهزة كهربائية",
+      "brand": "دي إس بي",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "فرن كهربائي دي إس بي KT50B بسعة 50 لتراً.",
+      "variants": "",
+      "image": "oven.jpg"
+    },
+    {
+      "id": "TH903",
+      "title": "ثلاجة شاي لتر 903 ملون",
+      "version": "1",
+      "active": true,
+      "code": "TH903",
+      "price": 4000,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "ثلاجة شاي ملونة موديل 903 بسعة لتر.",
+      "variants": "",
+      "image": "thermos.jpg"
+    },
+    {
+      "id": "FLASK",
+      "title": "ثلاجات شاي ملون أبو فيل",
+      "version": "1",
+      "active": true,
+      "code": "FLASK",
+      "price": 2500,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "أبو فيل",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "ثلاجة شاي أبو فيل باللون الأبيض. اختر الحجم المناسب قبل الإضافة إلى السلة.",
+      "variants": "أبيض - صغير، أبيض - 1.3 لتر",
+      "image": "flask.jpg"
+    },
+    {
+      "id": "SO1929",
+      "title": "ملمس 230 درجة سوكاني 1929",
+      "version": "1",
+      "active": true,
+      "code": "SO1929",
+      "price": 8712,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "العناية الشخصية",
+      "brand": "سوكاني",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "ملمس شعر سوكاني 1929 بدرجة حرارة حتى 230 درجة.",
+      "variants": "",
+      "image": "straightener.jpg"
+    },
+    {
+      "id": "M1010",
+      "title": "ميلامين صحي حراري 1010",
+      "version": "1",
+      "active": true,
+      "code": "M1010",
+      "price": 650,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "غير مصنف",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "ميلامين صحي حراري موديل 1010.",
+      "variants": "",
+      "image": "hec-product.jpg"
+    },
+    {
+      "id": "N681012",
+      "title": "صحن مدور مشرّم 681012",
+      "version": "1",
+      "active": true,
+      "code": "N681012",
+      "price": 1000,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "صحن مدور مشرّم 681012 — من تشكيلة المنتجات الظاهرة في المرجع.",
+      "variants": "",
+      "image": "plate-white.jpg"
+    },
+    {
+      "id": "N009",
+      "title": "صحن ميلامين بيج حزام 009",
+      "version": "1",
+      "active": true,
+      "code": "N009",
+      "price": 250,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "صحن ميلامين بيج حزام 009 — من تشكيلة المنتجات الظاهرة في المرجع.",
+      "variants": "",
+      "image": "plate-floral.jpg"
+    },
+    {
+      "id": "N12",
+      "title": "طقم ملاعق طبخ سيليكون 12 قطعة",
+      "version": "1",
+      "active": true,
+      "code": "N12",
+      "price": 5000,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "طقم ملاعق طبخ سيليكون 12 قطعة — من تشكيلة المنتجات الظاهرة في المرجع.",
+      "variants": "",
+      "image": "utensils.jpg"
+    },
+    {
+      "id": "N250",
+      "title": "فرش تقشير وتنظيف متعدد الاستخدام",
+      "version": "1",
+      "active": true,
+      "code": "N250",
+      "price": 250,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "فرش تقشير وتنظيف متعدد الاستخدام — من تشكيلة المنتجات الظاهرة في المرجع.",
+      "variants": "",
+      "image": "peeler.jpg"
+    },
+    {
+      "id": "N8051",
+      "title": "سلة صحون صغيرة دورين استيل MONSOON",
+      "version": "1",
+      "active": true,
+      "code": "N8051",
+      "price": 4000,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "MONSOON",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "سلة صحون صغيرة دورين استيل MONSOON — من تشكيلة المنتجات الظاهرة في المرجع.",
+      "variants": "",
+      "image": "rack-metal.jpg"
+    },
+    {
+      "id": "N27",
+      "title": "صحن تقديم أكريليك مع الغطاء 27 سم",
+      "version": "1",
+      "active": true,
+      "code": "N27",
+      "price": 1400,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "صحن تقديم أكريليك مع الغطاء 27 سم — من تشكيلة المنتجات الظاهرة في المرجع.",
+      "variants": "",
+      "image": "dish-cover.jpg"
+    },
+    {
+      "id": "N8235",
+      "title": "مقص ممتاز ملون مسمار نحاس 8235",
+      "version": "1",
+      "active": true,
+      "code": "N8235",
+      "price": 700,
+      "isStockItem": true,
+      "barcodes": "",
+      "category": "أدوات المطبخ",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حبة",
+      "description": "مقص ممتاز ملون مسمار نحاس 8235 — من تشكيلة المنتجات الظاهرة في المرجع.",
+      "variants": "",
+      "image": "scissors.jpg"
+    },
+    {
+      "id": "BUNDLE_golden",
+      "title": "الساعة الذهبية",
+      "version": "1",
+      "active": true,
+      "code": "BUNDLE_golden",
+      "price": 3850,
+      "isStockItem": false,
+      "barcodes": "",
+      "category": "العروض المجمعة",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حزمة",
+      "description": "حزمة تشمل 6 أصناف. راجع تفاصيل المكونات وتوزيع السعر قبل الإضافة.",
+      "variants": "",
+      "image": "golden-plates.jpg"
+    },
+    {
+      "id": "BUNDLE_kitchen",
+      "title": "عروض أدوات المطبخ",
+      "version": "1",
+      "active": true,
+      "code": "BUNDLE_kitchen",
+      "price": 70500,
+      "isStockItem": false,
+      "barcodes": "",
+      "category": "العروض المجمعة",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حزمة",
+      "description": "حزمة تشمل 6 أصناف. راجع تفاصيل المكونات وتوزيع السعر قبل الإضافة.",
+      "variants": "",
+      "image": "banner-discount.jpg"
+    },
+    {
+      "id": "BUNDLE_care",
+      "title": "العروض المميزة",
+      "version": "1",
+      "active": true,
+      "code": "BUNDLE_care",
+      "price": 14962,
+      "isStockItem": false,
+      "barcodes": "",
+      "category": "العروض المجمعة",
+      "brand": "الهيثم",
+      "stock": "غير متصل",
+      "unit": "حزمة",
+      "description": "حزمة تشمل 3 أصناف. راجع تفاصيل المكونات وتوزيع السعر قبل الإضافة.",
+      "variants": "",
+      "image": "banner-grooming.jpg"
+    }
+  ],
+  "shop-new": [
+    {
+      "id": "new-group-0",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-0",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 0
+    },
+    {
+      "id": "new-group-1",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-1",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 1
+    },
+    {
+      "id": "new-group-2",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-2",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 2
+    },
+    {
+      "id": "new-group-3",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-3",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 3
+    },
+    {
+      "id": "new-group-4",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-4",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 4
+    },
+    {
+      "id": "new-group-5",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-5",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 5
+    },
+    {
+      "id": "new-group-6",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-6",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 6
+    },
+    {
+      "id": "new-group-7",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-7",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 7
+    },
+    {
+      "id": "new-group-8",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-8",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 8
+    },
+    {
+      "id": "new-group-9",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-9",
+      "mode": "automatic",
+      "productIds": [],
+      "excludedIds": [],
+      "limit": 100,
+      "image": "cat-new.jpg",
+      "position": 9
+    }
+  ],
+  "shop-layout": [
+    {
+      "id": "layout-group-0",
+      "title": "أدوات المطبخ",
+      "version": "1",
+      "active": true,
+      "groupId": "group-0",
+      "image": "cat-kitchen.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 0
+    },
+    {
+      "id": "layout-group-1",
+      "title": "منتجات على المتجر",
+      "version": "1",
+      "active": true,
+      "groupId": "group-1",
+      "image": "cat-global.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 1
+    },
+    {
+      "id": "layout-group-2",
+      "title": "وصل حديثاً",
+      "version": "1",
+      "active": true,
+      "groupId": "group-2",
+      "image": "cat-new.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 2
+    },
+    {
+      "id": "layout-group-3",
+      "title": "أجهزة وإلكترونيات",
+      "version": "1",
+      "active": true,
+      "groupId": "group-3",
+      "image": "cat-electronics.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 3
+    },
+    {
+      "id": "layout-group-4",
+      "title": "أدوات الكيك",
+      "version": "1",
+      "active": true,
+      "groupId": "group-4",
+      "image": "cat-baking.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 4
+    },
+    {
+      "id": "layout-group-5",
+      "title": "بلاستيكية",
+      "version": "1",
+      "active": true,
+      "groupId": "group-5",
+      "image": "cat-plastic.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 5
+    },
+    {
+      "id": "layout-group-6",
+      "title": "ألعاب",
+      "version": "1",
+      "active": true,
+      "groupId": "group-6",
+      "image": "cat-toys.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 6
+    },
+    {
+      "id": "layout-group-7",
+      "title": "دراجات هوائية وسيارات كهربائية",
+      "version": "1",
+      "active": true,
+      "groupId": "group-7",
+      "image": "cat-scooter.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 7
+    },
+    {
+      "id": "layout-group-8",
+      "title": "منظفات",
+      "version": "1",
+      "active": true,
+      "groupId": "group-8",
+      "image": "cat-floor-cleaner.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 8
+    },
+    {
+      "id": "layout-group-9",
+      "title": "مفروشات",
+      "version": "1",
+      "active": true,
+      "groupId": "group-9",
+      "image": "hec-product.jpg",
+      "layout": "شبكة",
+      "columns": "3",
+      "position": 9
+    }
+  ],
+  "videos": [],
+  "offers-layout": [
+    {
+      "id": "offers-layout",
+      "title": "العروض المميزة",
+      "version": "1",
+      "active": true,
+      "text": "",
+      "showTotal": true,
+      "showSavings": true,
+      "image": "",
+      "position": 0
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "golden",
+      "title": "الساعة الذهبية",
+      "version": "1",
+      "active": true,
+      "sourceType": "Product Bundle",
+      "sourceId": "",
+      "parentItem": "BUNDLE_golden",
+      "parentName": "الساعة الذهبية",
+      "parentQty": 1,
+      "parentRate": 3850,
+      "useParentValues": true,
+      "total": 3850,
+      "allocation": [
+        {
+          "id": "N681012",
+          "variant": "",
+          "qty": 1,
+          "base": 1000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N009",
+          "variant": "",
+          "qty": 1,
+          "base": 250,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N27",
+          "variant": "",
+          "qty": 1,
+          "base": 1400,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "TR006",
+          "variant": "",
+          "qty": 1,
+          "base": 200,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "K0650",
+          "variant": "",
+          "qty": 1,
+          "base": 650,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "J0350",
+          "variant": "",
+          "qty": 1,
+          "base": 350,
+          "kind": "auto",
+          "value": 0
+        }
+      ],
+      "image": "golden-plates.jpg",
+      "startsAt": "",
+      "endsAt": "",
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "kitchen",
+      "title": "عروض أدوات المطبخ",
+      "version": "1",
+      "active": true,
+      "sourceType": "Product Bundle",
+      "sourceId": "",
+      "parentItem": "BUNDLE_kitchen",
+      "parentName": "عروض أدوات المطبخ",
+      "parentQty": 1,
+      "parentRate": 70500,
+      "useParentValues": true,
+      "total": 70500,
+      "allocation": [
+        {
+          "id": "CA015",
+          "variant": "",
+          "qty": 1,
+          "base": 50000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "P1001",
+          "variant": "",
+          "qty": 1,
+          "base": 3000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N12",
+          "variant": "",
+          "qty": 1,
+          "base": 5000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N8051",
+          "variant": "",
+          "qty": 1,
+          "base": 4000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "FLASK",
+          "variant": "",
+          "qty": 1,
+          "base": 2500,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "KJ3052",
+          "variant": "",
+          "qty": 1,
+          "base": 6000,
+          "kind": "auto",
+          "value": 0
+        }
+      ],
+      "image": "banner-discount.jpg",
+      "startsAt": "",
+      "endsAt": "",
+      "position": 1,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "care",
+      "title": "العروض المميزة",
+      "version": "1",
+      "active": true,
+      "sourceType": "Product Bundle",
+      "sourceId": "",
+      "parentItem": "BUNDLE_care",
+      "parentName": "العروض المميزة",
+      "parentQty": 1,
+      "parentRate": 14962,
+      "useParentValues": true,
+      "total": 14962,
+      "allocation": [
+        {
+          "id": "A79234",
+          "variant": "",
+          "qty": 1,
+          "base": 6000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "SO1929",
+          "variant": "",
+          "qty": 1,
+          "base": 8712,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N250",
+          "variant": "",
+          "qty": 1,
+          "base": 250,
+          "kind": "auto",
+          "value": 0
+        }
+      ],
+      "image": "banner-grooming.jpg",
+      "startsAt": "",
+      "endsAt": "",
+      "position": 2,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "golden": [
+    {
+      "id": "golden",
+      "title": "الساعة الذهبية",
+      "version": "1",
+      "active": true,
+      "sourceType": "Product Bundle",
+      "sourceId": "",
+      "parentItem": "BUNDLE_golden",
+      "parentName": "الساعة الذهبية",
+      "parentQty": 1,
+      "parentRate": 3850,
+      "useParentValues": true,
+      "total": 3850,
+      "allocation": [
+        {
+          "id": "N681012",
+          "variant": "",
+          "qty": 1,
+          "base": 1000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N009",
+          "variant": "",
+          "qty": 1,
+          "base": 250,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N27",
+          "variant": "",
+          "qty": 1,
+          "base": 1400,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "TR006",
+          "variant": "",
+          "qty": 1,
+          "base": 200,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "K0650",
+          "variant": "",
+          "qty": 1,
+          "base": 650,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "J0350",
+          "variant": "",
+          "qty": 1,
+          "base": 350,
+          "kind": "auto",
+          "value": 0
+        }
+      ],
+      "image": "golden-plates.jpg",
+      "startsAt": "",
+      "endsAt": "",
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "offer-bundles": [
+    {
+      "id": "golden",
+      "title": "الساعة الذهبية",
+      "version": "1",
+      "active": true,
+      "sourceType": "Product Bundle",
+      "sourceId": "",
+      "parentItem": "BUNDLE_golden",
+      "parentName": "الساعة الذهبية",
+      "parentQty": 1,
+      "parentRate": 3850,
+      "useParentValues": true,
+      "total": 3850,
+      "allocation": [
+        {
+          "id": "N681012",
+          "variant": "",
+          "qty": 1,
+          "base": 1000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N009",
+          "variant": "",
+          "qty": 1,
+          "base": 250,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N27",
+          "variant": "",
+          "qty": 1,
+          "base": 1400,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "TR006",
+          "variant": "",
+          "qty": 1,
+          "base": 200,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "K0650",
+          "variant": "",
+          "qty": 1,
+          "base": 650,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "J0350",
+          "variant": "",
+          "qty": 1,
+          "base": 350,
+          "kind": "auto",
+          "value": 0
+        }
+      ],
+      "image": "golden-plates.jpg",
+      "startsAt": "",
+      "endsAt": "",
+      "position": 0,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "kitchen",
+      "title": "عروض أدوات المطبخ",
+      "version": "1",
+      "active": true,
+      "sourceType": "Product Bundle",
+      "sourceId": "",
+      "parentItem": "BUNDLE_kitchen",
+      "parentName": "عروض أدوات المطبخ",
+      "parentQty": 1,
+      "parentRate": 70500,
+      "useParentValues": true,
+      "total": 70500,
+      "allocation": [
+        {
+          "id": "CA015",
+          "variant": "",
+          "qty": 1,
+          "base": 50000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "P1001",
+          "variant": "",
+          "qty": 1,
+          "base": 3000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N12",
+          "variant": "",
+          "qty": 1,
+          "base": 5000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N8051",
+          "variant": "",
+          "qty": 1,
+          "base": 4000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "FLASK",
+          "variant": "",
+          "qty": 1,
+          "base": 2500,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "KJ3052",
+          "variant": "",
+          "qty": 1,
+          "base": 6000,
+          "kind": "auto",
+          "value": 0
+        }
+      ],
+      "image": "banner-discount.jpg",
+      "startsAt": "",
+      "endsAt": "",
+      "position": 1,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    },
+    {
+      "id": "care",
+      "title": "العروض المميزة",
+      "version": "1",
+      "active": true,
+      "sourceType": "Product Bundle",
+      "sourceId": "",
+      "parentItem": "BUNDLE_care",
+      "parentName": "العروض المميزة",
+      "parentQty": 1,
+      "parentRate": 14962,
+      "useParentValues": true,
+      "total": 14962,
+      "allocation": [
+        {
+          "id": "A79234",
+          "variant": "",
+          "qty": 1,
+          "base": 6000,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "SO1929",
+          "variant": "",
+          "qty": 1,
+          "base": 8712,
+          "kind": "auto",
+          "value": 0
+        },
+        {
+          "id": "N250",
+          "variant": "",
+          "qty": 1,
+          "base": 250,
+          "kind": "auto",
+          "value": 0
+        }
+      ],
+      "image": "banner-grooming.jpg",
+      "startsAt": "",
+      "endsAt": "",
+      "position": 2,
+      "audience": {
+        "enabled": false
+      },
+      "motion": {
+        "inherit": true
+      },
+      "gallery": [],
+      "seconds": 5,
+      "useOwnSeconds": false
+    }
+  ],
+  "coupons": [],
+  "orders": [],
+  "delivery-board": [],
+  "couriers": [],
+  "returns": [],
+  "orders-layout": [
+    {
+      "id": "stage-0",
+      "title": "تم الاستلام",
+      "version": "1",
+      "active": true,
+      "stage": "تم الاستلام",
+      "text": "تم الاستلام",
+      "position": 0
+    },
+    {
+      "id": "stage-1",
+      "title": "قيد التجهيز",
+      "version": "1",
+      "active": true,
+      "stage": "قيد التجهيز",
+      "text": "قيد التجهيز",
+      "position": 1
+    },
+    {
+      "id": "stage-2",
+      "title": "في الطريق",
+      "version": "1",
+      "active": true,
+      "stage": "في الطريق",
+      "text": "في الطريق",
+      "position": 2
+    },
+    {
+      "id": "stage-3",
+      "title": "تم التسليم",
+      "version": "1",
+      "active": true,
+      "stage": "تم التسليم",
+      "text": "تم التسليم",
+      "position": 3
+    }
+  ],
+  "abandoned": [],
+  "reports": [],
+  "account-layout": [
+    {
+      "id": "profile",
+      "title": "إدارة الحساب",
+      "version": "1",
+      "active": true,
+      "service": "profile",
+      "text": "إدارة الحساب",
+      "image": "",
+      "position": 0
+    },
+    {
+      "id": "wallet",
+      "title": "إدارة المحفظة",
+      "version": "1",
+      "active": true,
+      "service": "wallet",
+      "text": "إدارة المحفظة",
+      "image": "",
+      "position": 1
+    },
+    {
+      "id": "orders",
+      "title": "سجل الطلبات",
+      "version": "1",
+      "active": true,
+      "service": "orders",
+      "text": "سجل الطلبات",
+      "image": "",
+      "position": 2
+    },
+    {
+      "id": "returns",
+      "title": "طلبات المرتجعات",
+      "version": "1",
+      "active": true,
+      "service": "returns",
+      "text": "طلبات المرتجعات",
+      "image": "",
+      "position": 3
+    },
+    {
+      "id": "loyalty",
+      "title": "نقاط الولاء",
+      "version": "1",
+      "active": true,
+      "service": "loyalty",
+      "text": "نقاط الولاء",
+      "image": "",
+      "position": 4
+    },
+    {
+      "id": "affiliate",
+      "title": "التسويق بالعمولة",
+      "version": "1",
+      "active": true,
+      "service": "affiliate",
+      "text": "التسويق بالعمولة",
+      "image": "",
+      "position": 5
+    },
+    {
+      "id": "messages",
+      "title": "إدارة الرسائل",
+      "version": "1",
+      "active": true,
+      "service": "messages",
+      "text": "إدارة الرسائل",
+      "image": "",
+      "position": 6
+    },
+    {
+      "id": "favorites",
+      "title": "قائمة المفضلة",
+      "version": "1",
+      "active": true,
+      "service": "favorites",
+      "text": "قائمة المفضلة",
+      "image": "",
+      "position": 7
+    },
+    {
+      "id": "addresses",
+      "title": "إدارة العناوين",
+      "version": "1",
+      "active": true,
+      "service": "addresses",
+      "text": "إدارة العناوين",
+      "image": "",
+      "position": 8
+    },
+    {
+      "id": "language",
+      "title": "اللغة",
+      "version": "1",
+      "active": true,
+      "service": "language",
+      "text": "اللغة",
+      "image": "",
+      "position": 9
+    },
+    {
+      "id": "help",
+      "title": "مركز المساعدة",
+      "version": "1",
+      "active": true,
+      "service": "help",
+      "text": "مركز المساعدة",
+      "image": "",
+      "position": 10
+    }
+  ],
+  "customers": [],
+  "wallet": [],
+  "loyalty": [
+    {
+      "id": "loyalty-policy",
+      "title": "سياسة الولاء",
+      "version": "1",
+      "active": false,
+      "earnRate": 1000,
+      "redeemRate": 1,
+      "expiryDays": 365
+    }
+  ],
+  "affiliate": [],
+  "feature-policies": [
+    {
+      "id": "visibility-loyalty",
+      "title": "الإتاحة العامة لنقاط الولاء",
+      "version": "1",
+      "active": true,
+      "feature": "loyalty",
+      "scope": "الجميع",
+      "customerIds": [],
+      "visible": true,
+      "enabled": false,
+      "priority": 0,
+      "startsAt": "",
+      "endsAt": ""
+    },
+    {
+      "id": "visibility-affiliate",
+      "title": "الإتاحة العامة للتسويق بالعمولة",
+      "version": "1",
+      "active": true,
+      "feature": "affiliate",
+      "scope": "الجميع",
+      "customerIds": [],
+      "visible": true,
+      "enabled": false,
+      "priority": 0,
+      "startsAt": "",
+      "endsAt": ""
+    }
+  ],
+  "messages": [],
+  "notifications": [
+    {
+      "id": "welcome",
+      "title": "أهلاً بك في متجر الهيثم",
+      "version": "1",
+      "active": true,
+      "body": "تصفح الأقسام والعروض واحفظ منتجاتك المفضلة. هذه معاينة محلية؛ الطلبات لا تُرسل بعد.",
+      "route": "home",
+      "audience": {
+        "enabled": false
+      },
+      "publishAt": "",
+      "position": 0,
+      "type": "تسويق",
+      "recipient": "العميل",
+      "destinationType": "صفحة",
+      "productIds": [],
+      "groupIds": [],
+      "priority": 0
+    }
+  ],
+  "notification-settings": [
+    {
+      "id": "notification-settings",
+      "title": "إعدادات الإشعارات",
+      "version": "1",
+      "active": true,
+      "orders": true,
+      "account": true,
+      "marketing": true,
+      "maxMarketing": 10,
+      "retentionDays": 30
+    }
+  ],
+  "newsletter": [],
+  "erp-connection": [],
+  "store-publication": [],
+  "setup-doctor": [],
+  "setup-guide": [],
+  "customer-provision": [],
+  "customer-links": [],
+  "settings": [
+    {
+      "id": "store",
+      "title": "متجر الهيثم",
+      "version": "1",
+      "active": true,
+      "phone": "",
+      "email": "",
+      "youtube": "",
+      "facebook": "https://www.facebook.com/HaithemEkhwanCenter/",
+      "instagram": "",
+      "whatsapp": "",
+      "play": "",
+      "policy": ""
+    }
+  ],
+  "appearance": [
+    {
+      "id": "appearance",
+      "title": "مظهر الهيثم",
+      "version": "1",
+      "active": true,
+      "palette": "royal",
+      "frames": true,
+      "dataFrames": true,
+      "bannerFrames": true,
+      "shine": true,
+      "productOfferText": "عروض خاصة",
+      "showProductOffer": true,
+      "floatingCartMovable": true
+    }
+  ],
+  "app-navigation": [
+    {
+      "id": "home",
+      "title": "الرئيسية",
+      "version": "1",
+      "active": true,
+      "route": "home",
+      "text": "الرئيسية",
+      "activeStyle": "أسود وذهبي وعنابي لامع",
+      "position": 0
+    },
+    {
+      "id": "shop",
+      "title": "تسوق",
+      "version": "1",
+      "active": true,
+      "route": "shop",
+      "text": "تسوق",
+      "activeStyle": "أسود وذهبي وعنابي لامع",
+      "position": 1
+    },
+    {
+      "id": "offers",
+      "title": "العروض",
+      "version": "1",
+      "active": true,
+      "route": "offers",
+      "text": "العروض",
+      "activeStyle": "أسود وذهبي وعنابي لامع",
+      "position": 2
+    },
+    {
+      "id": "orders",
+      "title": "طلباتي",
+      "version": "1",
+      "active": true,
+      "route": "orders",
+      "text": "طلباتي",
+      "activeStyle": "أسود وذهبي وعنابي لامع",
+      "position": 3
+    },
+    {
+      "id": "account",
+      "title": "حسابي",
+      "version": "1",
+      "active": true,
+      "route": "account",
+      "text": "حسابي",
+      "activeStyle": "أسود وذهبي وعنابي لامع",
+      "position": 4
+    }
+  ],
+  "users": [
+    {
+      "id": "admin",
+      "title": "admin",
+      "version": "1",
+      "active": true,
+      "roles": "حساب مراجعة محلي؛ ليس دور ERPNext",
+      "status": "معاينة محلية"
+    }
+  ],
+  "audit": [],
+  "reels-settings": [
+    {
+      "id": "reels-settings",
+      "title": "إعدادات الريلز",
+      "version": "1",
+      "active": true,
+      "enabled": true,
+      "shortcut": true,
+      "shortcutTitle": "أحدث الريلز",
+      "latestCount": 6,
+      "autoPlay": true,
+      "dataSaver": true,
+      "rings": true,
+      "ringStyle": "brand",
+      "autoDiscover": false,
+      "description": true,
+      "attachments": true,
+      "sourceOrder": "hosted,external,attachment,description",
+      "limit": 60
+    }
+  ]
+}

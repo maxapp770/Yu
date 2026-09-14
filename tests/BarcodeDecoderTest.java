@@ -1,0 +1,6 @@
+import com.alhaitham.hec.BarcodeDecoder;
+import com.google.zxing.*;
+import com.google.zxing.common.BitMatrix;
+public final class BarcodeDecoderTest {
+ public static void main(String[] args)throws Exception{int checks=0;BarcodeDecoder decoder=new BarcodeDecoder();Object[][] samples={{BarcodeFormat.EAN_13,"5901234123457"},{BarcodeFormat.CODE_128,"A79234"},{BarcodeFormat.QR_CODE,"PROMO_REVIEW15"}};for(Object[] sample:samples){String value=(String)sample[1];BitMatrix matrix=new MultiFormatWriter().encode(value,(BarcodeFormat)sample[0],640,480);byte[] pixels=new byte[640*480];for(int y=0;y<480;y++)for(int x=0;x<640;x++)pixels[y*640+x]=(byte)(matrix.get(x,y)?0:255);if(!value.equals(decoder.decode(pixels,640,480)))throw new AssertionError(sample[0]);checks++;byte[] rotated=new byte[pixels.length];for(int y=0;y<480;y++)for(int x=0;x<640;x++)rotated[(639-x)*480+y]=pixels[y*640+x];if(!value.equals(decoder.decode(rotated,480,640)))throw new AssertionError("rotated "+sample[0]);checks++;}if(decoder.decode(new byte[1],640,480)!=null)throw new AssertionError("invalid dimensions");checks++;byte[] blank=new byte[640*480];java.util.Arrays.fill(blank,(byte)255);if(decoder.decode(blank,640,480)!=null)throw new AssertionError("blank frame");checks++;System.out.println(checks+" native decoder checks passed: EAN13 / Code128 / QR, rotations, malformed and blank frames");}
+}

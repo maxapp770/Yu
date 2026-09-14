@@ -1,0 +1,24 @@
+{
+  "checks": 8,
+  "errors": [],
+  "sizes": [
+    {
+      "width": 320,
+      "previous": 292.5,
+      "current": 239.5,
+      "reductionPercent": 18
+    },
+    {
+      "width": 360,
+      "previous": 311.5,
+      "current": 254.5,
+      "reductionPercent": 18
+    },
+    {
+      "width": 412,
+      "previous": 331,
+      "current": 274,
+      "reductionPercent": 17
+    }
+  ]
+}

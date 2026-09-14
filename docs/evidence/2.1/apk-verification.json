@@ -1,0 +1,20 @@
+{
+  "customer": {
+    "package": "com.alhaitham.hec.preview",
+    "version": "2.1.0",
+    "versionCode": 12,
+    "sha256": "e040078f9640d0c545c603d337bd43c81f675ab8884b1154af831e84d5389419",
+    "bytes": 2089397,
+    "assets_verified": 106,
+    "signer_sha256": "834fe0788fce00dcfa72bd5e2aa28b02e384d479412ef0e0199522aa7ead1592"
+  },
+  "admin": {
+    "package": "com.alhaitham.hec.admin",
+    "version": "2.1.0",
+    "versionCode": 12,
+    "sha256": "47491562e8192155bc6909e3dd7d97ebbb25f5ec924c1e75037c1e676c6b8bcd",
+    "bytes": 4125041,
+    "assets_verified": 153,
+    "signer_sha256": "834fe0788fce00dcfa72bd5e2aa28b02e384d479412ef0e0199522aa7ead1592"
+  }
+}

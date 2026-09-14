@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "Customer package has no dashboard, preview login or administrative routes",
+    "Customer rating still works after separation",
+    "No-server state is explicit, without claiming a live connection",
+    "Separate administrator app opens with server-authenticated role check",
+    "Settings load server choices and prevent enabling unsupported workflow adapters",
+    "Company changes reset dependent lists; selected configuration saves to server",
+    "Draft edit stays hidden from the separate customer app before publication",
+    "Publishing makes the draft appear in a second app on revision refresh",
+    "Maintenance state propagates without changing customer endpoint or credentials",
+    "Administrator creates a separate customer login mapped to ERP customer and company",
+    "Searchable integrated guide includes generated DocTypes and migration procedures",
+    "Customer mapping form offers server-backed user, customer and company dropdowns",
+    "Lost order reply retries with the same idempotency key and clears the cart only after confirmation",
+    "Private order notification opens the customer order detail",
+    "Customer password change uses the authenticated server route and clears input fields",
+    "Customer password is not retained in local storage",
+    "Both applications fit 320/390/460px phones without horizontal overflow",
+    "Administrative fields have tap-accessible educational explanations",
+    "Local admin review is isolated from ERP credentials and unavailable in the customer APK",
+    "A different store identity fences writes instead of mixing cached carts",
+    "No browser runtime errors"
+  ],
+  "errors": [],
+  "backend": "local mock contract only; live REST checked separately, custom app not installed"
+}

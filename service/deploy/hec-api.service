@@ -1,0 +1,22 @@
+[Unit]
+Description=HEC standalone API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=hec-store
+Group=hec-store
+WorkingDirectory=/opt/hec/service
+EnvironmentFile=/var/lib/hec-store/.env
+Environment=HEC_TRUSTED_PROXY=127.0.0.1,::1
+ExecStart=/opt/hec/service/.venv/bin/gunicorn --bind 127.0.0.1:8080 --workers 2 --threads 4 --timeout 120 hec_service.server:app
+Restart=on-failure
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/hec-store
+
+[Install]
+WantedBy=multi-user.target

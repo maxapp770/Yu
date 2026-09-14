@@ -1,0 +1,24 @@
+test_android_allowlist_serves_all_packaged_scripts_styles_and_guide_images (__main__.ReleaseTests.test_android_allowlist_serves_all_packaged_scripts_styles_and_guide_images) ... ok
+test_cancelled_schedule_never_activates (__main__.ReleaseTests.test_cancelled_schedule_never_activates) ... ok
+test_custom_doctypes_do_not_contain_shared_api_secrets (__main__.ReleaseTests.test_custom_doctypes_do_not_contain_shared_api_secrets) ... ok
+test_customer_cannot_publish_or_rollback (__main__.ReleaseTests.test_customer_cannot_publish_or_rollback) ... ok
+test_draft_not_public_until_published (__main__.ReleaseTests.test_draft_not_public_until_published) ... ok
+test_guest_bootstrap_contains_no_credentials (__main__.ReleaseTests.test_guest_bootstrap_contains_no_credentials) ... ok
+test_inbox_cannot_be_read_by_another_customer (__main__.ReleaseTests.test_inbox_cannot_be_read_by_another_customer) ... ok
+test_maintenance_blocks_orders_preserves_public_content (__main__.ReleaseTests.test_maintenance_blocks_orders_preserves_public_content) ... ok
+test_order_detail_rejects_foreign_customer (__main__.ReleaseTests.test_order_detail_rejects_foreign_customer) ... ok
+test_password_change_requires_current_user_and_strong_new_password (__main__.ReleaseTests.test_password_change_requires_current_user_and_strong_new_password) ... ok
+test_provision_creates_website_user_and_link (__main__.ReleaseTests.test_provision_creates_website_user_and_link) ... ok
+test_provision_requires_admin_and_create_permission (__main__.ReleaseTests.test_provision_requires_admin_and_create_permission) ... ok
+test_provision_weak_password_and_existing_user_rejected (__main__.ReleaseTests.test_provision_weak_password_and_existing_user_rejected) ... ok
+test_public_context_restored_after_exception (__main__.ReleaseTests.test_public_context_restored_after_exception) ... ok
+test_publish_changes_all_modules_atomically (__main__.ReleaseTests.test_publish_changes_all_modules_atomically) ... ok
+test_rollback_restores_content_without_erasing_history (__main__.ReleaseTests.test_rollback_restores_content_without_erasing_history) ... ok
+test_scheduled_release_waits_for_server_clock (__main__.ReleaseTests.test_scheduled_release_waits_for_server_clock) ... ok
+test_stale_digest_rejects_publish (__main__.ReleaseTests.test_stale_digest_rejects_publish) ... ok
+test_stale_rollback_and_maintenance_rejected (__main__.ReleaseTests.test_stale_rollback_and_maintenance_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.010s
+
+OK

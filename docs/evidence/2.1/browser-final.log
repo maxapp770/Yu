@@ -1,0 +1,21 @@
+PASS Customer package has no dashboard, preview login or administrative routes
+PASS Customer rating still works after separation
+PASS No-server state is explicit, without claiming a live connection
+PASS Separate administrator app opens with server-authenticated role check
+PASS Settings load server choices and prevent enabling unsupported workflow adapters
+PASS Company changes reset dependent lists; selected configuration saves to server
+PASS Draft edit stays hidden from the separate customer app before publication
+PASS Publishing makes the draft appear in a second app on revision refresh
+PASS Maintenance state propagates without changing customer endpoint or credentials
+PASS Administrator creates a separate customer login mapped to ERP customer and company
+PASS Searchable integrated guide includes generated DocTypes and migration procedures
+PASS Customer mapping form offers server-backed user, customer and company dropdowns
+PASS Lost order reply retries with the same idempotency key and clears the cart only after confirmation
+PASS Private order notification opens the customer order detail
+PASS Customer password change uses the authenticated server route and clears input fields
+PASS Customer password is not retained in local storage
+PASS Both applications fit 320/390/460px phones without horizontal overflow
+PASS Administrative fields have tap-accessible educational explanations
+PASS Local admin review is isolated from ERP credentials and unavailable in the customer APK
+PASS A different store identity fences writes instead of mixing cached carts
+PASS No browser runtime errors
