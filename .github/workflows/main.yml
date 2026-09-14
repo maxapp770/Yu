@@ -48,6 +48,32 @@ jobs:
 
           echo "Source parts extracted successfully."
 
+      - name: Fix BarcodeDecoder Java error
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+
+          decoder="$(find assembled \
+            -type f \
+            -path "*/app/src/main/java/com/alhaitham/hec/BarcodeDecoder.java" \
+            -print \
+            -quit || true)"
+
+          if [[ -z "$decoder" ]]; then
+            echo "::error::BarcodeDecoder.java was not found."
+            exit 1
+          fi
+
+          sed -i \
+            's/catch (ReaderException | IllegalArgumentException ignored)/catch (IllegalArgumentException ignored)/' \
+            "$decoder"
+
+          sed -i \
+            '/import com.google.zxing.ReaderException;/d' \
+            "$decoder"
+
+          echo "BarcodeDecoder.java fixed successfully."
+
       - name: Set up Java
         uses: actions/setup-java@v5
         with:
@@ -115,7 +141,7 @@ jobs:
               )
             else
               echo "::error::Neither build-apk.sh nor gradlew was found."
-              find assembled -maxdepth 6 -type f | sort
+              find assembled -maxdepth 8 -type f | sort
               exit 1
             fi
           fi
